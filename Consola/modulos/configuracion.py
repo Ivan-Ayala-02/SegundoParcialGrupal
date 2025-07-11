@@ -1,0 +1,32 @@
+from copy import deepcopy
+from modulos.mini_juegos.mini_juegos import *
+from archivos.archivo_json import cargar_datos_json
+from archivos.archivo_csv import cargar_datos_csv
+
+configuracion_juego = cargar_datos_json("archivos\json\configuracion.json")
+
+rondas = configuracion_juego["rondas"]
+estado_inicial = configuracion_juego["estado_inicial"]
+tiempos = configuracion_juego["tiempos_limite"]
+modo = configuracion_juego["accesibilidad"]
+dificultades = configuracion_juego["dificultades"]
+
+funciones_juegos = {
+    "si_o_no": jugar_si_o_no,
+    "completar_oracion": jugar_completar_oracion,
+    "completar_palabra": jugar_completar_palabra,
+    "preguntados": jugar_preguntados
+}    
+
+preguntas = {
+    "si_o_no": cargar_datos_csv("archivos\csv\si_o_no.csv"),
+    "completar_oracion": cargar_datos_csv("archivos\csv\completar_oracion.csv"),
+    "completar_palabra": cargar_datos_csv("archivos\csv\completar_palabra.csv"),
+    "preguntados": cargar_datos_csv("archivos\csv\preguntados.csv")
+}
+
+premios = cargar_datos_json("archivos\json\premios.json")
+
+premios_disponibles = deepcopy(premios)
+
+estadisticas_jugadores = []

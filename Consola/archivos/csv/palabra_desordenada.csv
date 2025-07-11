@@ -1,0 +1,177 @@
+categoria,dificultad,pista,palabra
+Cultura General,fácil,Autor de Don Quijote,CERVANTES
+Cultura General,fácil,Pintor de la Mona Lisa,LEONARDO
+Cultura General,fácil,Compositor de la Quinta Sinfonía,BEETHOVEN
+Cultura General,fácil,Autor de Romeo y Julieta,SHAKESPEARE
+Cultura General,fácil,Pintor español del cubismo,PICASSO
+Cultura General,fácil,Compositor austriaco de Las bodas de Fígaro,MOZART
+Cultura General,fácil,Autor de El Principito,SAINT
+Cultura General,media,Escritor argentino autor de El Aleph,BORGES
+Cultura General,media,Pintor argentino de murales,BERNI
+Cultura General,media,Autor de La Divina Comedia,DANTE
+Cultura General,media,Pintor impresionista francés,MONET
+Cultura General,difícil,Escultor italiano del Renacimiento,DONATELLO
+Cultura General,difícil,Autor de Ficciones,BORGES
+Deportes,fácil,Deporte más popular del mundo,FUTBOL
+Deportes,fácil,Deporte que se juega con raqueta y pelota amarilla,TENIS
+Deportes,fácil,Deporte acuático con estilos libre y mariposa,NATACION
+Deportes,fácil,Deporte donde se anotan goles en un aro,BASQUET
+Deportes,fácil,Deporte argentino jugado a caballo,POLO
+Deportes,fácil,Competencia deportiva mundial cada cuatro años,OLIMPIADAS
+Deportes,fácil,Deporte de combate con guantes,BOXEO
+Deportes,fácil,Deporte que se juega en una mesa verde,BILLAR
+Deportes,fácil,Deporte con bate y pelota,BEISBOL
+Deportes,fácil,Deporte de invierno con esquíes,ESQUI
+Deportes,media,Jugador argentino considerado el mejor del mundo,MESSI
+Deportes,media,Estadio donde juega Boca Juniors,BOMBONERA
+Deportes,media,Deporte donde se usa un palo llamado driver,GOLF
+Deportes,media,Torneo de tenis más prestigioso,WIMBLEDON
+Deportes,media,Piloto argentino de Fórmula Uno,FANGIO
+Deportes,media,Equipo de fútbol argentino con más títulos,RIVER
+Deportes,media,Deporte acuático con tabla,SURF
+Deportes,media,Boxeador argentino campeón mundial,MONZON
+Deportes,media,Competencia ciclística más famosa,TOUR
+Deportes,media,Deporte japonés de lucha,SUMO
+Deportes,difícil,Tenista argentino ganador de Roland Garros,GAUDIO
+Deportes,difícil,Estadio donde se jugó el Mundial de mil novecientos setenta y ocho,MONUMENTAL
+Deportes,difícil,Deporte donde se usa una pértiga,GARROCHA
+Deportes,difícil,Boxeador que venció a Ali,FRAZIER
+Deportes,difícil,Equipo de básquet argentino campeón mundial,GENERACION
+Deportes,difícil,Piloto argentino que corrió en Ferrari,REUTEMANN
+Deportes,difícil,Deporte que combina esquí y tiro,BIATHLON
+Deportes,difícil,Nadador argentino medallista olímpico,BORGES
+Deportes,difícil,Torneo de golf más prestigioso,MASTERS
+Deportes,difícil,Maratonista argentino subcampeón olímpico,ZABALA
+General,fácil,Órgano más grande del cuerpo humano,PIEL
+General,fácil,Planeta más cercano al Sol,MERCURIO
+General,fácil,Gas más abundante en la atmósfera,NITROGENO
+General,fácil,Hueso más largo del cuerpo,FEMUR
+General,fácil,Elemento químico más ligero,HIDROGENO
+General,fácil,Continente más frío,ANTARTIDA
+General,fácil,Mamífero más grande del mundo,BALLENA
+General,fácil,Ciencia que estudia los seres vivos,BIOLOGIA
+General,fácil,Fuerza que atrae los objetos hacia la Tierra,GRAVEDAD
+General,fácil,Parte de la planta que absorbe agua,RAIZ
+General,media,Partícula subatómica con carga positiva,PROTON
+General,media,Proceso por el cual las plantas producen oxígeno,FOTOSINTESIS
+General,media,Teoría de Einstein sobre el espacio-tiempo,RELATIVIDAD
+General,media,Órgano que produce insulina,PANCREAS
+General,media,Elemento más abundante en el universo,HIDROGENO
+General,media,Ciencia que estudia los terremotos,SISMOLOGIA
+General,media,Tipo de roca formada por sedimentos,SEDIMENTARIA
+General,difícil,Proceso de división celular,MITOSIS
+General,difícil,Escala para medir la dureza de los minerales,MOHS
+General,difícil,Partícula que no tiene masa,FOTON
+General,difícil,Proceso de transformación de elementos químicos,TRANSMUTACION
+General,difícil,Ciencia que estudia los hongos,MICOLOGIA
+General,difícil,Enfermedad causada por deficiencia de vitamina C,ESCORBUTO
+General,difícil,Tipo de enlace químico más fuerte,COVALENTE
+General,difícil,Hormona que regula el azúcar en sangre,INSULINA
+General,difícil,Proceso de formación de gametos,GAMETOGENESIS
+General,difícil,Teoría que explica la evolución continental,TECTONICA
+General,difícil,Unidad de medida de la intensidad luminosa,CANDELA
+Geografía,fácil,País más grande del mundo,RUSIA
+Geografía,fácil,Parte de la Capital de Argentina,BUENOS
+Geografía,fácil,Océano más grande,PACIFICO
+Geografía,fácil,Continente donde está Argentina,AMERICA
+Geografía,fácil,Río más largo del mundo,NILO
+Geografía,fácil,Cordillera que atraviesa Argentina,ANDES
+Geografía,fácil,Capital de España,MADRID
+Geografía,fácil,Isla más grande del mundo,GROENLANDIA
+Geografía,fácil,Desierto más grande del mundo,SAHARA
+Geografía,fácil,País con forma de bota,ITALIA
+Geografía,media,Provincia argentina más grande,BUENOS
+Geografía,media,Volcán más alto de Argentina,ACONCAGUA
+Geografía,media,Río que desemboca en el Río de la Plata,PARANA
+Geografía,media,País más poblado del mundo,CHINA
+Geografía,media,Canal que conecta el Atlántico y Pacífico,PANAMA
+Geografía,media,Península donde está España,IBERICA
+Geografía,media,Isla argentina en disputa con Reino Unido,MALVINAS
+Geografía,difícil,Archipiélago argentino en el Atlántico Sur,GEORGIAS
+Geografía,difícil,Punto más austral de América,HORNOS
+Geografía,difícil,Río que nace en el Aconcagua,MENDOZA
+Geografía,difícil,Estrecho entre Argentina y Chile,MAGALLANES
+Geografía,difícil,Desierto más árido del mundo,ATACAMA
+Geografía,difícil,Lago más grande de Argentina,ARGENTINO
+Geografía,difícil,Cordillera que separa Europa de Asia,URALES
+Geografía,difícil,Cabo más meridional de África,AGUJAS
+Historia,fácil,Descubridor de América,COLON
+Historia,fácil,Primera Guerra Mundial comenzó en este año,CATORCE
+Historia,fácil,Revolución francesa ocurrió en este siglo,DIECIOCHO
+Historia,fácil,General que cruzó los Andes,SANMARTIN
+Historia,fácil,Primer presidente de Argentina,RIVADAVIA
+Historia,fácil,Dictador alemán de la Segunda Guerra Mundial,HITLER
+Historia,fácil,Imperio que conquistó gran parte de Europa,ROMANO
+Historia,fácil,Muro que dividía Berlín,BERLIN
+Historia,fácil,Revolución que derrocó al zar ruso,RUSA
+Historia,fácil,Explorador que llegó a la Luna,ARMSTRONG
+Historia,media,Batalla decisiva de la independencia argentina,MAIPU
+Historia,media,Presidente argentino durante la crisis del dos mil uno,DELARUA
+Historia,media,Tratado que terminó la Primera Guerra Mundial,VERSALLES
+Historia,media,Emperador francés que conquistó Europa,NAPOLEON
+Historia,media,Civilización que construyó Machu Picchu,INCA
+Historia,media,Guerra civil española duró hasta este año,TREINTA
+Historia,media,Faraón que construyó la Gran Pirámide,KEOPS
+Historia,media,Presidente estadounidense durante la Guerra Civil,LINCOLN
+Historia,media,Revolución industrial comenzó en este país,INGLATERRA
+Historia,media,Mártir argentina conocida como Evita,PERON
+Historia,difícil,Batalla donde murió San Martín,BOULOGNE
+Historia,difícil,Congreso que declaró la independencia argentina,TUCUMAN
+Historia,difícil,Tratado que dividió el mundo entre España y Portugal,TORDESILLAS
+Historia,difícil,Emperador romano que legalizó el cristianismo,CONSTANTINO
+Historia,difícil,Dinastía china que construyó la Ciudad Prohibida,MING
+Historia,difícil,Faraón mujer que gobernó Egipto,HATSHEPSUT
+Historia,difícil,Guerra que enfrentó a Atenas y Esparta,PELOPONESO
+Historia,difícil,Presidente argentino durante la Guerra de las Malvinas,GALTIERI
+Historia,difícil,Filósofo griego maestro de Aristóteles,PLATON
+Historia,difícil,Revolución que derrocó a Porfirio Díaz,MEXICANA
+Animales,fácil,Felino doméstico que dice 'miau',GATO
+Frutas,fácil,Fruta amarilla que los monos adoran,BANANA
+Transporte,fácil,Vehículo de cuatro ruedas,CARRO
+Naturaleza,fácil,Estrella que nos da luz y calor,SOL
+Elementos,fácil,Líquido transparente que bebemos,AGUA
+Animales,fácil,Animal que vuela y pone huevos,PAJARO
+Colores,fácil,Color del cielo en un día despejado,AZUL
+Cuerpo,fácil,Órgano que bombea sangre,CORAZON
+Música,media,Instrumento musical de cuerdas con seis trastes,GUITARRA
+Animales,media,Mamífero acuático con colmillos largos,MORSA
+Ciencias,media,Ciencia que estudia los seres vivos,BIOLOGIA
+Geografía,media,Capital de Francia,PARIS
+Minerales,media,Metal precioso de color amarillo,ORO
+Astronomía,media,Planeta más cercano al Sol,MERCURIO
+Biología,media,Proceso de transformación de oruga a mariposa,METAMORFOSIS
+Idiomas,media,Idioma oficial de Brasil,PORTUGUES
+Literatura,difícil,Figura retórica que consiste en exagerar,HIPERBOLE
+Medicina,difícil,Inflamación de las membranas que rodean el cerebro,MENINGITIS
+Política,difícil,Gobierno ejercido por una sola persona,MONARQUIA
+Ciencias,difícil,Estudio de los fósiles,PALEONTOLOGIA
+Física,difícil,Fenómeno óptico que descompone la luz,REFRACCION
+Psicología,difícil,Temor irracional a espacios cerrados,CLAUSTROFOBIA
+Medicina,difícil,Medicamento que combate las bacterias,ANTIBIOTICO
+Ciencias,difícil,Estudio del comportamiento animal,ETOLOGIA
+Filosofía,difícil,Doctrina filosófica que niega la existencia de Dios,ATEISMO
+Medicina,difícil,Trastorno del ritmo cardíaco,ARRITMIA
+Militar,difícil,Arte de la guerra y táctica militar,ESTRATEGIA
+Biología,difícil,Conjunto de cromosomas de una célula,CARIOTIPO
+Arte,difícil,Movimiento artístico del siglo XX con formas geométricas,CUBISMO
+Lingüística,difícil,Estudio de la estructura interna de las palabras,MORFOLOGIA
+Psiquiatría,difícil,Condición de tener múltiples personalidades,ESQUIZOFRENIA
+Biología,difícil,Proceso de división celular que reduce cromosomas,MEIOSIS
+Naturaleza,fácil,Agua que cae del cielo,LLUVIA
+Naturaleza,fácil,Movimiento del aire,VIENTO
+Naturaleza,fácil,Lugar donde crecen muchos árboles,BOSQUE
+Naturaleza,fácil,Corriente de agua que va hacia el mar,RIO
+Naturaleza,fácil,Elevación natural del terreno,MONTAÑA
+Naturaleza,fácil,Cuerpo de agua rodeado de tierra,LAGO
+Naturaleza,fácil,Parte de la planta que está bajo tierra,RAIZ
+Naturaleza,fácil,Parte colorida de la planta,FLOR
+Objetos,fácil,Vehículo de cuatro ruedas,CARRO
+Objetos,fácil,Objeto que usas para escribir,LAPIZ
+Objetos,fácil,Mueble donde duermes,CAMA
+Objetos,fácil,Objeto que usas para sentarte,SILLA
+Objetos,fácil,Electrodoméstico que enfría la comida,REFRIGERADOR
+Objetos,fácil,Objeto que usas para ver la hora,RELOJ
+Objetos,fácil,Aparato que usas para hablar con otras personas,TELEFONO
+Objetos,fácil,Objeto que usas para abrir puertas,LLAVE
+Objetos,fácil,Recipiente donde cocinas,OLLA
+Objetos,fácil,Objeto que usas para cortar papel,TIJERA
