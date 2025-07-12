@@ -1,4 +1,5 @@
-from modulos.utilidades import elegir_elemento_aleatorio_y_remover, lista_vacia
+#from modulos.utilidades import elegir_elemento_aleatorio_y_remover, lista_vacia
+from modulos.utilidades import *
 from modulos.mini_juegos.utilidades_mini_juegos import *
 from modulos.tiempo import obtener_tiempo_limite
 from modulos.entrada import es_cadena_vacia
@@ -145,3 +146,52 @@ def jugar_preguntados(recursos_mini_juego: dict) -> bool:
             se_respondio = True
 
     return resultado_final
+
+def minijuego_buscaminas(filas:int, columnas:int, cantidad_minas:int, datos_tablero:dict):
+    system("cls")
+    bloque_visual_ocupado = datos_tablero["bloque_visual_ocupado"]
+    bloque_visual_mina = datos_tablero["bloque_visual_mina"]
+    caracter_real_bloque = datos_tablero["caracter_real_bloque"]
+    caracter_real_mina = datos_tablero["caracter_real_mina"]
+    
+    matriz_visual_minas = crear_matriz(filas, columnas, bloque_visual_ocupado)
+    matriz_real_minas = crear_matriz(filas, columnas, caracter_real_bloque)
+    matriz_real_minas = reemplazar_elementos_aleatorio_matriz(matriz_real_minas, caracter_real_bloque, 
+                                                              caracter_real_mina, cantidad_minas)
+    juego_activo = True
+    mina_activada = False
+
+    while juego_activo:
+        tablero_disponible = contador_elemento_matriz(matriz_real_minas, caracter_real_bloque)
+
+        if tablero_disponible:
+            dibujar_matriz(matriz_visual_minas, numeracion=True)
+            ingreso_fila, ingreso_columna = ingreso_validacion_datos_buscaminas(filas, columnas) 
+            ingreso_matriz = matriz_real_minas[ingreso_fila][ingreso_columna]
+
+            if ingreso_matriz == caracter_real_mina:
+                reemplazar_elemento_entre_matrices(matriz_real_minas, matriz_visual_minas,
+                                                   caracter_real_mina, bloque_visual_mina)
+                juego_activo = False
+                mina_activada = True
+            else:
+                descubrir_bloques(ingreso_fila, ingreso_columna, matriz_visual_minas,
+                                  matriz_real_minas, datos_tablero) 
+            
+            pausar_y_limpiar()
+
+        else:
+            juego_activo = False    
+
+    if mina_activada:
+        mensaje_resultado = f"Perdiste! Mina pisada en {ingreso_fila+1, ingreso_columna+1}"
+        salida_juego = False
+    else:
+        mensaje_resultado ="Ganaste! liberaste el tablero sin tocar minas"
+        salida_juego = True
+
+    dibujar_matriz(matriz_visual_minas, True)
+    print(mensaje_resultado)
+
+    pausar_y_limpiar()
+    return salida_juego

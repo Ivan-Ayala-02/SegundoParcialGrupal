@@ -7,7 +7,8 @@ def mostrar_menu_principal():
     print("1) Jugar")
     print("2) Estadísticas")
     print("3) Reglas del Juego")
-    print("4) Salir")
+    print("4) Extras")
+    print("5) Salir")
     print()
     opcion = input("Elegí una opción: ").strip()
 
@@ -33,6 +34,17 @@ def mostrar_menu_estadisticas():
     print("2) Ver porcentaje de aciertos")
     print("3) Ver mejor partida")
     print("4) Volver al menú principal")
+    print()
+    opcion = input("Elegí una opción: ").strip()
+
+    return opcion
+
+def mostrar_menu_extras():
+    print()
+    imprimir_string_recuadro("MENÚ DE EXTRAS", 3)
+    print()
+    print("1) Jugar buscaminas")
+    print("2) Volver al menú principal")
     print()
     opcion = input("Elegí una opción: ").strip()
 

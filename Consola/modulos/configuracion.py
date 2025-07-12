@@ -30,3 +30,12 @@ premios = cargar_datos_json("archivos\json\premios.json")
 premios_disponibles = deepcopy(premios)
 
 estadisticas_jugadores = []
+
+diccionario_datos_tablero = {
+    "bloque_visual_ocupado" : ".",
+    "bloque_visual_liberado" : " ",
+    "bloque_visual_mina" : "x",
+    "caracter_real_bloque" : 0,
+    "caracter_real_liberado" : 1,
+    "caracter_real_mina" : 2
+    }

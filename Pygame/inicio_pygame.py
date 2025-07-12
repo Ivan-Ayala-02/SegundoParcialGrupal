@@ -26,6 +26,7 @@ pygame.display.set_icon(icono_ventana)
 
 pygame.mixer.init()
 pygame.mixer.music.load("pygame/recursos/musica_menu.wav")
+pygame.mixer.music.set_volume(0.1) # Volumen del juego
 
 # establezco los botones del MENU INICIO ------------------------------------------------
 
@@ -38,13 +39,12 @@ boton_salir = crear_boton(dimensiones=(30,30),
                           color_borde=None)
 
 boton_menu_principal = crear_boton(dimensiones=(50,150),
-                         posicion=(400,300),
+                         posicion=(400,400),
                          ventana=PANTALLA,
                          fuente=(fuente_texto),
                          texto="Ingrese cualquier boton para continuar",
                          color_borde=None)
                          
-
 lista_botones = [boton_salir, boton_menu_principal]
 
 # Inicio el bucle principal -------------------------------------------------------------

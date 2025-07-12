@@ -6,6 +6,7 @@ from modulos.menus.mostrar_menu import mostrar_menu_principal
 
 from modulos.menus.menu_jugar import menu_jugar
 from modulos.menus.menu_estadisticas import menu_estadisticas
+from modulos.menus.menu_extras import menu_extras
 
 from archivos.archivo_json import cargar_datos_json 
 from archivos.archivo_txt import cargar_texto_desde_archivo
@@ -32,6 +33,9 @@ def main():
                 mostrar_reglas(reglas)
                 pausar_y_limpiar()
             case "4":
+                pausar_y_limpiar()
+                menu_extras()
+            case "5":
                 print("\n¡Gracias por jugar!\n")
                 en_ejecucion = False
             case _:

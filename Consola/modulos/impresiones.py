@@ -1,6 +1,7 @@
 import re
 from colorama import Fore, Style
 
+
 ###################################################################### IMPRIMIR ######################################################################
 #---------------------- FUNCIONES PARA USAR EN IMPRESIONES ----------------------#
 # COLORES Y ELIMINACIÓN DE CARACTERES ANSI
@@ -102,3 +103,69 @@ def imprimir_lista(lista:list): ####### <-------- Nuevo
     for elemento in lista: 
     # Imprime elemento por elemento dentro de la lista
         print(f'{elemento}')
+
+#---------------------- BUSCAMINAS ----------------------#
+
+def imprimir_top(cantidad_columnas:int):
+    tl = '┌'
+    tm = '┬'
+    tr = '┐'
+    h = '─' * 3
+    top = tl + h + (tm + h) * (cantidad_columnas - 1) + tr
+    print(top)
+
+def imprimir_bottom(cantidad_columnas:int):
+    bl = '└'
+    bm = '┴'
+    br = '┘'
+    h = '─' * 3
+    bottom = bl + h + (bm + h) * (cantidad_columnas - 1) + br
+    print(bottom)
+
+def imprimir_mid_lineas(cantidad_columnas:int):
+    h = '─' * 3
+    lm = '├'
+    mm = '┼'
+    rm = '┤'
+    mid_top_bottom = lm + h + (mm + h) * (cantidad_columnas - 1) + rm
+    print(mid_top_bottom)
+
+def guardar_mid_contenido(fila_matriz:list):
+    v = '│'
+    mid_contenido = v
+    for i in range(len(fila_matriz)):
+        mid_contenido += f" {fila_matriz[i]} {v}"
+    return mid_contenido
+
+def imprimir_mid(matriz:list, numeracion:bool=False):
+    from modulos.utilidades import longitud_matriz
+    filas, columnas = longitud_matriz(matriz)
+    
+    # Mid
+    for i in range(filas):
+        mid = ""
+        mid += guardar_mid_contenido(matriz[i])
+        if numeracion == True:
+            mid += f" {i + 1}"  
+        print(mid)
+
+        #bottom
+        if i != filas - 1:
+            imprimir_mid_lineas(columnas)
+
+def imprimir_numeracion_cuadricula(cantidad_columnas:int):
+    cadena_vacia = " " * 2
+    medio = " " * 3
+    for i in range(cantidad_columnas):
+        cadena_vacia += f"{i + 1}"
+        if i < cantidad_columnas - 1:
+            cadena_vacia += medio
+    print(cadena_vacia)
+
+def dibujar_matriz(matriz:list, numeracion:bool=False):
+    cantidad_columnas = len(matriz[0])
+    if numeracion:
+        imprimir_numeracion_cuadricula(cantidad_columnas)
+    imprimir_top(cantidad_columnas)
+    imprimir_mid(matriz, numeracion)
+    imprimir_bottom(cantidad_columnas)

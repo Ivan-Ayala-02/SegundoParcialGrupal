@@ -23,7 +23,8 @@ def crear_boton(dimensiones, posicion, ventana, color_borde, imagen = None, fuen
         # Desempaquetado de una tupla
         # (Desempaqueto un dato complejo en dos datos mas chicos)
         fuente = pygame.font.SysFont(tipo, tamanio, True)
-        boton["superficie"] = fuente.render(texto, False, "Red", "Orange")
+        #boton["superficie"] = fuente.render(texto, False, "Red", "Orange")
+        boton["superficie"] = fuente.render(texto, True, "White")
         
     boton["rectangulo"] = boton["superficie"].get_rect()
     boton["rectangulo"].topleft = boton["posicion"]   
