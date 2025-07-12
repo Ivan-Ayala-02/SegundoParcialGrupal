@@ -2,6 +2,7 @@ from modulos.utilidades import pausar_y_limpiar, comparar_respuestas
 from modulos.jugador import imprimir_estado_del_jugador
 from modulos.impresiones import *
 from modulos.entrada import *
+from os import system
 
 def mostrar_encabezado(ronda_actual: int, mini_juego: str, dato: dict, estado_jugador: dict, campo: str, tipo_dato: str  = "Dato"):
     nombre_juego = normalizar_nombre_juego(mini_juego)
@@ -104,3 +105,56 @@ def obtener_opciones_pregunta(datos_pregunta: dict, cant_opciones: int) -> list:
 
 
     return opciones
+
+def ingresar_numero_dentro_de_rango(rango_inicio:int, rango_fin:int, salida_default:int=None, mensaje:str=None, mensaje_error:str=None) -> int:
+    bandera = True
+
+    while bandera:
+        numero = input(mensaje)
+
+        if numero == "":
+            if salida_default == None:
+                print(mensaje_error)
+            else:
+                numero = salida_default
+                bandera = False
+    
+        elif numero.isnumeric():
+            numero = int(numero)
+
+            if numero < rango_inicio or numero > rango_fin:
+                print(mensaje_error)
+            else:
+                bandera = False
+
+        else:
+            print(mensaje_error)
+
+    return numero
+
+def ingresar_longitud_tablero() -> tuple:
+    system("cls")
+    default_filas = 5
+    maximo_filas = 20
+    default_columnas = 5
+    maximo_columnas = 20
+
+    mensaje_filas = f"A) Ingrese la cantidad de filas para el tablero ( default {default_filas} - maximo {maximo_filas}): "
+    mensaje_columnas = f"B) Ingrese la cantidad de columnas para el tablero ( default {default_columnas} - maximo {maximo_columnas}): "
+    error_limites = "Limite exedido, ingrese dentro de un rango valido: "
+
+    filas = ingresar_numero_dentro_de_rango(0, maximo_filas, default_filas, mensaje_filas, error_limites)
+    system("cls")
+    columnas = ingresar_numero_dentro_de_rango(0, maximo_columnas, default_columnas, mensaje_columnas, error_limites)
+    return filas, columnas
+
+def ingresar_cantidad_minas(filas:int, columnas:int) -> int:
+    system("cls")
+    default_minas = 1
+
+    mensaje_minas = f"C) Ingrese la cantidad de minas (default {default_minas}): "
+    mensaje_error_minas = "La cantidad de minas no puede ser superior al tamaño del tablero: "
+    longitud_tablero = filas * columnas
+
+    minas = ingresar_numero_dentro_de_rango(0, longitud_tablero, default_minas, mensaje_minas, mensaje_error_minas)
+    return minas
