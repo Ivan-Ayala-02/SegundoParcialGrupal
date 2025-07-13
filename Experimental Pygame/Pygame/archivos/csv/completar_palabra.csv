@@ -1,0 +1,151 @@
+categoria,dificultad,palabra,respuesta,pista
+cultura general,fácil,T _ N G O,TANGO,Baile argentino
+cultura general,fácil,M _ T _,MATE,Infusión argentina
+cultura general,fácil,A S _ D O,ASADO,Comida típica argentina
+cultura general,fácil,G _ R D _ L,GARDEL,Rey del tango
+cultura general,fácil,M _ _ _ C A,MUSICA,Arte sonoro
+cultura general,fácil,B _ _ L _,BAILE,Arte del movimiento
+cultura general,fácil,L _ B R O,LIBRO,Objeto para leer
+cultura general,fácil,A R T _,ARTE,Expresión creativa
+cultura general,fácil,C _ N _,CINE,Arte audiovisual
+cultura general,fácil,T _ _ T R O,TEATRO,Arte escénico
+cultura general,media,B _ R G _ S,BORGES,Escritor argentino famoso
+cultura general,media,M _ F _ L D A,MAFALDA,Personaje de Quino
+cultura general,media,C _ R T _ Z _ R,CORTAZAR,Escritor del boom
+cultura general,media,S _ _ D R O,SANDRO,Cantante popular
+cultura general,media,M _ R _ _ D _ S,MERCEDES,Cantante folklórica
+cultura general,media,P _ _ Z _ L L A,PIAZZOLLA,Músico del tango nuevo
+cultura general,media,C _ L _ N,COLON,Teatro porteño
+cultura general,media,Q _ _ N O,QUINO,Creador de Mafalda
+cultura general,media,D _ L C _ _ D _ _ L _ C _ _,DULCEDELECHE,Dulce argentino
+cultura general,media,E M P _ N _ D A,EMPANADA,Comida típica
+cultura general,difícil,M _ R T _ N _ F _ _ R R O,MARTINFIERRO,Obra de José Hernández
+cultura general,difícil,B _ N D _ N _ _ N,BANDONEON,Instrumento del tango
+cultura general,difícil,Z _ M B A,ZAMBA,Danza folklórica
+cultura general,difícil,C _ _ M _ R _,CAMARA,Danza folklórica
+cultura general,difícil,G _ _ O,GATO,Danza folklórica
+cultura general,difícil,C _ _ C _ R _ R A,CHACARERA,Danza folklórica
+cultura general,difícil,M _ L _ N G A,MILONGA,Precursora del tango
+cultura general,difícil,F _ D _ L _ _,FIDELIO,Ópera de Beethoven
+cultura general,difícil,G _ _ _ _ _ N,GARDEL,Zorzal criollo
+cultura general,difícil,L _ _ _ _ _ T A,LUNFARDO,Jerga porteña
+deporte,fácil,F _ _ B _ L,FUTBOL,Deporte más popular del mundo
+deporte,fácil,P _ L _ T A,PELOTA,Se usa en casi todos los deportes
+deporte,fácil,G _ L,GOL,Anotación en el fútbol
+deporte,fácil,A R _ O,ARCO,Portería del fútbol
+deporte,fácil,T _ N I S,TENIS,Deporte con raqueta
+deporte,fácil,B _ _ _ _ T,BASQUET,Deporte con canasta
+deporte,fácil,B _ X _ O,BOXEO,Deporte de combate
+deporte,fácil,N _ _ A R,NADAR,Actividad acuática
+deporte,fácil,C _ _ R _ R,CORRER,Actividad atlética básica
+deporte,fácil,S _ L T _ R,SALTAR,Acción deportiva
+deporte,media,M _ S S I,MESSI,Jugador argentino campeón mundial
+deporte,media,M _ R _ D _ N A,MARADONA,Ídolo del fútbol argentino
+deporte,media,B _ C A,BOCA,Equipo de La Bombonera
+deporte,media,R I _ E R,RIVER,Equipo de Núñez
+deporte,media,O L _ M P _ C O S,OLIMPICOS,Juegos deportivos mundiales
+deporte,media,M _ N D _ A L,MUNDIAL,Competencia futbolística máxima
+deporte,media,A R _ E N T _ N A,ARGENTINA,Selección campeona 2022
+deporte,media,C _ M P _ O N,CAMPEON,Ganador del torneo
+deporte,media,E S T _ D _ O,ESTADIO,Lugar donde se juega
+deporte,media,E Q _ _ P O,EQUIPO,Grupo de jugadores
+deporte,difícil,L _ B _ R T _ D _ R _ S,LIBERTADORES,Copa sudamericana de clubes
+deporte,difícil,S _ D _ M _ R _ C _ N A,SUDAMERICANA,Copa continental secundaria
+deporte,difícil,G _ L _ A Z O,GOLAZO,Gol espectacular
+deporte,difícil,A R _ _ E R O,ARQUERO,Guardameta
+deporte,difícil,D _ F _ N S _ R,DEFENSOR,Jugador que defiende
+deporte,difícil,M _ D _ O C _ M P O,MEDIOCAMPO,Zona central del campo
+deporte,difícil,D _ L _ N T _ R O,DELANTERO,Jugador ofensivo
+deporte,difícil,T _ C N _ C O,TECNICO,Director del equipo
+deporte,difícil,F _ R M _ L A _ N O,FORMULAUNO,Automovilismo de élite
+deporte,difícil,R _ G B Y,RUGBY,Deporte ovalado
+general,fácil,A G _ A,AGUA,Líquido vital
+general,fácil,F _ _ G O,FUEGO,Elemento caliente
+general,fácil,S _ L,SOL,Estrella del sistema
+general,fácil,L _ N A,LUNA,Satélite terrestre
+general,fácil,A _ R _,AIRE,Gas que respiramos
+general,fácil,T _ _ R R A,TIERRA,Nuestro planeta
+general,fácil,C _ _ L O,CIELO,Bóveda celeste
+general,fácil,V _ _ N T O,VIENTO,Aire en movimiento
+general,fácil,N _ _ V _,NIEVE,Agua congelada
+general,fácil,L L _ V _ A,LLUVIA,Precipitación
+general,media,O X _ G _ N O,OXIGENO,Gas vital
+general,media,C _ R _ Z _ N,CORAZON,Órgano que bombea
+general,media,C _ R _ B R O,CEREBRO,Órgano del pensamiento
+general,media,E S Q _ _ L _ T O,ESQUELETO,Estructura ósea
+general,media,M _ S C _ L O,MUSCULO,Tejido contráctil
+general,media,S _ N G R _,SANGRE,Líquido vital
+general,media,P _ L M _ N,PULMON,Órgano respiratorio
+general,media,H _ G _ D O,HIGADO,Órgano depurador
+general,media,R _ Ñ _ N,RIÑON,Órgano filtrador
+general,media,E S T _ M _ G O,ESTOMAGO,Órgano digestivo
+general,difícil,F _ T _ S _ N T _ S _ S,FOTOSINTESIS,Proceso vegetal
+general,difícil,G R _ V _ D _ D,GRAVEDAD,Fuerza de atracción
+general,difícil,A T _ M O,ATOMO,Partícula elemental
+general,difícil,M _ L _ C _ L A,MOLECULA,Conjunto de átomos
+general,difícil,E L _ C T R _ N,ELECTRON,Partícula subatómica
+general,difícil,P R _ T _ N,PROTON,Partícula positiva
+general,difícil,N _ _ T R _ N,NEUTRON,Partícula neutra
+general,difícil,R _ D _ _ C T _ V _ D _ D,RADIACTIVIDAD,Emisión atómica
+general,difícil,M _ G N _ T _ S M O,MAGNETISMO,Fuerza magnética
+general,difícil,E L _ C T R _ C _ D _ D,ELECTRICIDAD,Energía eléctrica
+geografia,fácil,A R _ _ N T _ N A,ARGENTINA,Nuestro país
+geografia,fácil,B _ _ N _ S _ A _ R _ S,BUENOSAIRES,Capital argentina
+geografia,fácil,B R _ S _ L,BRASIL,País vecino más grande
+geografia,fácil,C _ _ L _,CHILE,País vecino del oeste
+geografia,fácil,R _ O,RIO,Curso de agua
+geografia,fácil,M _ R,MAR,Agua salada
+geografia,fácil,M _ N T _ Ñ A,MONTAÑA,Elevación natural
+geografia,fácil,C _ U D _ D,CIUDAD,Centro urbano
+geografia,fácil,P _ _ S,PAIS,Nación
+geografia,fácil,C _ N T _ N _ N T _,CONTINENTE,Gran masa terrestre
+geografia,media,A C _ N C _ G _ A,ACONCAGUA,Montaña más alta de América
+geografia,media,I G _ _ Z U,IGUAZU,Cataratas famosas
+geografia,media,P _ T _ G _ N _ A,PATAGONIA,Región sur argentina
+geografia,media,P _ M P A,PAMPA,Llanura argentina
+geografia,media,A N D _ S,ANDES,Cordillera occidental
+geografia,media,C _ R D _ B A,CORDOBA,Provincia del centro
+geografia,media,M _ N D _ Z A,MENDOZA,Provincia del vino
+geografia,media,B _ R _ L _ C _ _,BARILOCHE,Ciudad turística
+geografia,media,U S _ _ A _ A,USHUAIA,Ciudad del fin del mundo
+geografia,media,R _ S _ R _ O,ROSARIO,Ciudad de Santa Fe
+geografia,difícil,Q _ _ B R _ D A _ _ _ _ M _ H _ _ C A,QUEBRADAHUMAHUACA,Patrimonio de Jujuy
+geografia,difícil,P _ R _ T O _ M _ R _ N O,PERITOMORENO,Glaciar famoso
+geografia,difícil,V _ L D _ S,VALDES,Península de ballenas
+geografia,difícil,I B _ R A,IBERA,Esteros correntinos
+geografia,difícil,F _ _ G O,FUEGO,Tierra del sur
+geografia,difícil,S _ L _ N A S _ G R _ N D _ S,SALINASGRANDES,Salar del norte
+geografia,difícil,C _ _ M _ N,CHALTEN,Villa del Fitz Roy
+geografia,difícil,T _ L _ M P _ Y A,TALAMPAYA,Parque riojano
+geografia,difícil,I S _ _ _ _ L,ISCHIGUALASTO,Valle de la Luna
+geografia,difícil,P _ _ N A,PUNA,Altiplano norteño
+historia,fácil,C _ L _ N,COLON,Descubridor de América
+historia,fácil,I N D _ P _ N D _ N _ _ A,INDEPENDENCIA,Liberación de 1816
+historia,fácil,S _ N _ M _ R T _ N,SANMARTIN,Libertador de América
+historia,fácil,B _ L G R _ N O,BELGRANO,Creador de la bandera
+historia,fácil,G _ _ R R A,GUERRA,Conflicto armado
+historia,fácil,H _ S T _ R _ A,HISTORIA,Estudio del pasado
+historia,fácil,P _ S _ D O,PASADO,Tiempo anterior
+historia,fácil,R _ Y,REY,Monarca
+historia,fácil,I M P _ R _ O,IMPERIO,Gran reino
+historia,fácil,C _ S T _ L L O,CASTILLO,Fortaleza medieval
+historia,media,P _ R _ N,PERON,Presidente argentino famoso
+historia,media,E V _ T A,EVITA,Primera dama querida
+historia,media,R _ V _ L _ C _ _ N,REVOLUCION,Cambio político violento
+historia,media,R _ P _ B L _ C A,REPUBLICA,Forma de gobierno
+historia,media,C _ N S T _ T _ C _ _ N,CONSTITUCION,Ley fundamental
+historia,media,D _ C T _ D _ R A,DICTADURA,Gobierno autoritario
+historia,media,D _ M _ C R _ C _ A,DEMOCRACIA,Gobierno del pueblo
+historia,media,H _ T L _ R,HITLER,Dictador alemán
+historia,media,N _ P _ L _ _ N,NAPOLEON,Emperador francés
+historia,media,T _ T _ N _ C,TITANICO,Barco famoso hundido
+historia,difícil,V _ R R _ _ N _ T O,VIRREINATO,Colonia española en América
+historia,difícil,M _ L V _ N _ S,MALVINAS,Islas en conflicto 1982
+historia,difícil,F _ D _ R _ L _ S,FEDERALES,Bando de Rosas
+historia,difícil,U N _ T _ R _ O S,UNITARIOS,Bando de Rivadavia
+historia,difícil,R _ S _ S,ROSAS,Gobernador de Buenos Aires
+historia,difícil,S _ R M _ _ N T O,SARMIENTO,Presidente educador
+historia,difícil,M _ T R _,MITRE,Primer presidente constitucional
+historia,difícil,A L _ M,ALEM,Fundador de la UCR
+historia,difícil,Y R _ G _ Y _ N,YRIGOYEN,Presidente radical
+historia,difícil,C _ R D _ B _ Z O,CORDOBAZO,Protesta de 1969

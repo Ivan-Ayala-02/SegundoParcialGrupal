@@ -1,0 +1,151 @@
+categoria,dificultad,pregunta,respuesta
+cultura general,fácil,¿La pizza es de origen italiano?,Sí
+cultura general,fácil,¿El violín es un instrumento musical?,Sí
+cultura general,fácil,¿Shakespeare escribió Romeo y Julieta?,Sí
+cultura general,fácil,¿La Mona Lisa es una pintura famosa?,Sí
+cultura general,fácil,¿El tango es un baile argentino?,Sí
+cultura general,fácil,¿Mickey Mouse es un personaje de Disney?,Sí
+cultura general,fácil,¿El teatro es una forma de arte?,Sí
+cultura general,fácil,¿La salsa es un condimento?,Sí
+cultura general,fácil,¿Los libros se leen?,Sí
+cultura general,fácil,¿La música se escucha?,Sí
+cultura general,media,"¿Van Gogh pintó ""La noche estrellada""?",Sí
+cultura general,media,¿Beethoven era sordo?,Sí
+cultura general,media,¿El flamenco es de España?,Sí
+cultura general,media,¿Picasso pintó el Guernica?,Sí
+cultura general,media,¿Los Beatles eran ingleses?,Sí
+cultura general,media,¿El sushi es japonés?,Sí
+cultura general,media,¿Mozart era austriaco?,Sí
+cultura general,media,¿La cumbia es música argentina?,No
+cultura general,media,¿El asado es típico argentino?,Sí
+cultura general,media,¿Gardel era argentino?,Sí
+cultura general,difícil,¿Borges ganó el Premio Nobel de Literatura?,No
+cultura general,difícil,¿El Martín Fierro fue escrito por José Hernández?,Sí
+cultura general,difícil,¿Mafalda fue creada por Quino?,Sí
+cultura general,difícil,¿El bandoneón es fundamental en el tango?,Sí
+cultura general,difícil,¿Las empanadas son originarias de Argentina?,No
+cultura general,difícil,¿El mate se toma caliente?,Sí
+cultura general,difícil,"¿Sandro era conocido como ""El Gitano""?",No
+cultura general,difícil,¿El folklore argentino incluye la zamba?,Sí
+cultura general,difícil,¿El Teatro Colón está en Buenos Aires?,Sí
+cultura general,difícil,¿El dulce de leche es argentino?,Sí
+deporte,fácil,¿El fútbol se juega con los pies?,Sí
+deporte,fácil,¿El básquetbol se juega con las manos?,Sí
+deporte,fácil,¿En el tenis se usa una raqueta?,Sí
+deporte,fácil,¿El boxeo es un deporte de contacto?,Sí
+deporte,fácil,¿En el fútbol americano se puede usar las manos?,Sí
+deporte,fácil,¿La natación se practica en el agua?,Sí
+deporte,fácil,¿El golf se juega con palos?,Sí
+deporte,fácil,¿En el voleibol hay una red?,Sí
+deporte,fácil,¿El ciclismo se practica en bicicleta?,Sí
+deporte,fácil,¿En el ping pong se usa una pelota?,Sí
+deporte,media,¿Messi jugó en el Barcelona?,Sí
+deporte,media,¿Argentina ganó el Mundial de Fútbol 2022?,Sí
+deporte,media,¿Los Juegos Olímpicos se realizan cada 4 años?,Sí
+deporte,media,¿El Real Madrid es un equipo español?,Sí
+deporte,media,¿La NBA es la liga de básquet de Estados Unidos?,Sí
+deporte,media,¿Boca Juniors es un equipo argentino?,Sí
+deporte,media,¿El Maracaná está en Brasil?,Sí
+deporte,media,¿Federer es tenista?,Sí
+deporte,media,¿El Tour de Francia es de ciclismo?,Sí
+deporte,media,¿Un partido de fútbol dura 90 minutos?,Sí
+deporte,difícil,¿Argentina ganó algún Mundial antes de 1978?,No
+deporte,difícil,¿El offside existe en el básquetbol?,No
+deporte,difícil,¿Maradona jugó en la Juventus?,No
+deporte,difícil,¿El tenis se originó en Francia?,No
+deporte,difícil,¿En el rugby se puede pasar la pelota hacia adelante?,No
+deporte,difícil,¿La Fórmula 1 permite más de 20 autos en carrera?,Sí
+deporte,difícil,¿El béisbol tiene 9 innings?,Sí
+deporte,difícil,¿En el ajedrez deportivo hay límite de tiempo?,Sí
+deporte,difícil,¿El water polo se juega en piscina?,Sí
+deporte,difícil,¿El hockey sobre hielo permite peleas?,Sí
+general,fácil,¿El agua hierve a 100 grados?,Sí
+general,fácil,¿Los gatos son animales?,Sí
+general,fácil,¿El Sol es una estrella?,Sí
+general,fácil,¿Los humanos respiran oxígeno?,Sí
+general,fácil,¿El hielo es agua congelada?,Sí
+general,fácil,¿Los pájaros vuelan?,Sí
+general,fácil,¿El fuego es caliente?,Sí
+general,fácil,¿Los peces viven en el agua?,Sí
+general,fácil,¿La nieve es fría?,Sí
+general,fácil,¿Los ojos sirven para ver?,Sí
+general,media,¿La Tierra gira alrededor del Sol?,Sí
+general,media,¿Un año tiene 365 días?,Sí
+general,media,¿Los diamantes son más duros que el vidrio?,Sí
+general,media,¿La velocidad de la luz es constante?,Sí
+general,media,¿Los antibióticos matan virus?,No
+general,media,¿La gravedad existe en el espacio?,Sí
+general,media,¿Los murciélagos son mamíferos?,Sí
+general,media,¿El ADN contiene información genética?,Sí
+general,media,¿Los pingüinos vuelan?,No
+general,media,¿El corazón bombea sangre?,Sí
+general,difícil,¿El sonido viaja más rápido que la luz?,No
+general,difícil,¿Los hongos son plantas?,No
+general,difícil,¿El agua puede existir en tres estados?,Sí
+general,difícil,¿Los tiburones son mamíferos?,No
+general,difícil,¿La fotosíntesis produce oxígeno?,Sí
+general,difícil,¿Los insectos tienen columna vertebral?,No
+general,difícil,¿El cero absoluto es -273 grados Celsius?,Sí
+general,difícil,¿Los metales conducen electricidad?,Sí
+general,difícil,¿El planeta Venus es más caliente que Mercurio?,Sí
+general,difícil,¿Los cristales pueden crecer?,Sí
+geografía,fácil,¿Buenos Aires es la capital de Argentina?,Sí
+geografía,fácil,¿Brasil es el país más grande de Sudamérica?,Sí
+geografía,fácil,¿El océano Atlántico está al este de Argentina?,Sí
+geografía,fácil,¿La Cordillera de los Andes está en Argentina?,Sí
+geografía,fácil,¿África es un continente?,Sí
+geografía,fácil,¿El río Amazonas está en Sudamérica?,Sí
+geografía,fácil,¿China está en Asia?,Sí
+geografía,fácil,¿París es la capital de Francia?,Sí
+geografía,fácil,¿El desierto del Sahara está en África?,Sí
+geografía,fácil,¿Hay 7 continentes?,Sí
+geografía,media,¿El Aconcagua es la montaña más alta de América?,Sí
+geografía,media,¿Las Cataratas del Iguazú están en Argentina?,Sí
+geografía,media,¿El estrecho de Magallanes está en el sur de Argentina?,Sí
+geografía,media,¿Mendoza es conocida por sus vinos?,Sí
+geografía,media,¿El río de la Plata separa Argentina de Uruguay?,Sí
+geografía,media,¿Bariloche está en la Patagonia?,Sí
+geografía,media,¿Australia es un país y un continente?,Sí
+geografía,media,¿El Monte Everest está en Asia?,Sí
+geografía,media,¿Rusia es el país más grande del mundo?,Sí
+geografía,media,¿El Nilo es el río más largo del mundo?,Sí
+geografía,difícil,¿La Quebrada de Humahuaca está en Jujuy?,Sí
+geografía,difícil,¿El Glaciar Perito Moreno está en Santa Cruz?,Sí
+geografía,difícil,¿Los Esteros del Iberá están en Corrientes?,Sí
+geografía,difícil,¿El Cerro Champaquí está en Córdoba?,Sí
+geografía,difícil,¿La Península Valdés está en Chubut?,Sí
+geografía,difícil,¿El Cabo de Hornos está en Argentina?,No
+geografía,difícil,¿El Lago Titicaca está completamente en Argentina?,No
+geografía,difícil,¿La Antártida Argentina tiene población permanente?,No
+geografía,difícil,¿Ushuaia es la ciudad más austral del mundo?,Sí
+geografía,difícil,¿El Cerro Aconcagua está en San Juan?,No
+historia,fácil,¿Cristóbal Colón llegó a América?,Sí
+historia,fácil,¿La Segunda Guerra Mundial terminó en 1945?,Sí
+historia,fácil,¿Los dinosaurios existieron?,Sí
+historia,fácil,¿El hombre llegó a la Luna?,Sí
+historia,fácil,¿Argentina se independizó en 1816?,Sí
+historia,fácil,¿Los egipcios construyeron pirámides?,Sí
+historia,fácil,¿El Imperio Romano existió?,Sí
+historia,fácil,¿San Martín fue un prócer argentino?,Sí
+historia,fácil,¿La Revolución Francesa ocurrió en Francia?,Sí
+historia,fácil,¿El Titanic se hundió?,Sí
+historia,media,¿La Primera Guerra Mundial comenzó en 1914?,Sí
+historia,media,¿Perón fue presidente de Argentina?,Sí
+historia,media,¿El Muro de Berlín cayó en 1989?,Sí
+historia,media,¿Napoleon fue emperador de Francia?,Sí
+historia,media,¿El 25 de Mayo es feriado en Argentina?,Sí
+historia,media,¿Hitler fue alemán?,No
+historia,media,¿La Guerra Fría fue una guerra con armas?,No
+historia,media,¿Belgrano creó la bandera argentina?,Sí
+historia,media,¿Los incas estaban en América del Sur?,Sí
+historia,media,¿La caída del Imperio Romano fue en un solo día?,No
+historia,difícil,¿La Guerra de Malvinas fue en 1982?,Sí
+historia,difícil,¿El Virreinato del Río de la Plata existió?,Sí
+historia,difícil,¿Roca fue presidente argentino en el siglo XIX?,Sí
+historia,difícil,¿La Peste Negra ocurrió en la Edad Media?,Sí
+historia,difícil,¿Los templarios existieron en la Edad Media?,Sí
+historia,difícil,¿La Revolución Industrial comenzó en Inglaterra?,Sí
+historia,difícil,¿Sarmiento fue presidente antes que Mitre?,No
+historia,difícil,¿La Conquista del Desierto ocurrió en el siglo XX?,No
+historia,difícil,¿La Semana Trágica ocurrió en Argentina?,Sí
+historia,difícil,¿El Cordobazo fue en los años 60?,Sí

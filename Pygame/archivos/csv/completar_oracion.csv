@@ -1,0 +1,151 @@
+categoria,dificultad,oracion,respuesta
+Cultura General,fácil,El Sol es una _____.,ESTRELLA
+Cultura General,fácil,Romeo y Julieta fue escrita por _____.,SHAKESPEARE
+Cultura General,fácil,La Mona Lisa la pintó _____.,DA VINCI
+Cultura General,fácil,El violín tiene _____ cuerdas.,CUATRO
+Cultura General,fácil,Los Beatles eran de _____.,INGLATERRA
+Cultura General,fácil,Mickey Mouse fue creado por _____.,DISNEY
+Cultura General,fácil,El tango es típico de _____.,ARGENTINA
+Cultura General,fácil,La Torre Eiffel está en _____.,PARIS
+Cultura General,fácil,Picasso era _____.,ESPAÑOL
+Cultura General,fácil,El Quijote fue escrito por _____.,CERVANTES
+Cultura General,media,La Novena Sinfonía fue compuesta por _____.,BEETHOVEN
+Cultura General,media,El Guernica lo pintó _____.,PICASSO
+Cultura General,media,La película 'Casablanca' es de _____.,1942
+Cultura General,media,El tango 'La Cumparsita' es de _____.,URUGUAY
+Cultura General,media,El Teatro Colón está en _____.,BUENOS AIRES
+Cultura General,media,Mozart nació en _____.,AUSTRIA
+Cultura General,media,El David de Miguel Ángel está en _____.,FLORENCIA
+Cultura General,media,La ópera 'Carmen' es de _____.,BIZET
+Cultura General,media,El flamenco es típico de _____.,ESPAÑA
+Cultura General,media,La estatua del Cristo Redentor está en _____.,RIO DE JANEIRO
+Cultura General,difícil,El Ulises fue escrito por James _____.,JOYCE
+Cultura General,difícil,La Capilla Sixtina fue pintada por _____.,MIGUEL ÁNGEL
+Cultura General,difícil,El bolero 'Bésame Mucho' es de _____.,MÉXICO
+Cultura General,difícil,La Quinta Sinfonía de Beethoven está en tonalidad de Do _____.,MENOR
+Cultura General,difícil,El Museo del Prado está en _____.,MADRID
+Cultura General,difícil,La zarzuela es un género típico de _____.,ESPAÑA
+Cultura General,difícil,El escritor Jorge Luis Borges nació en _____.,BUENOS AIRES
+Cultura General,difícil,La Traviata es una ópera de _____.,VERDI
+Cultura General,difícil,El Impresionismo surgió en _____.,FRANCIA
+Cultura General,difícil,El tango 'Adiós Nonino' es de _____.,PIAZZOLLA
+Deportes,fácil,Michael Jordan jugaba al _____.,BALONCESTO
+Deportes,fácil,Pelé es una leyenda del fútbol de _____.,BRASIL
+Deportes,fácil,El fútbol se juega con _____ jugadores por equipo.,ONCE
+Deportes,fácil,Lionel Messi nació en _____.,ARGENTINA
+Deportes,fácil,En el tenis se juega con una _____.,RAQUETA
+Deportes,fácil,El boxeo se practica en un _____.,RING
+Deportes,fácil,Tiger Woods es famoso por jugar al _____.,GOLF
+Deportes,fácil,En el básquet se anota en una _____.,CANASTA
+Deportes,fácil,La natación se practica en una _____.,PISCINA
+Deportes,fácil,El Real Madrid es un equipo de _____.,FÚTBOL
+Deportes,media,Diego Maradona marcó el famoso 'gol con la _____'.,MANO
+Deportes,media,Lionel Messi ganó el Mundial en el año _____.,2022
+Deportes,media,Los Juegos Olímpicos se celebran cada _____ años.,CUATRO
+Deportes,media,Argentina ganó la Copa del Mundo en Francia en _____.,1978
+Deportes,media,Usain Bolt es el hombre más _____ del mundo.,RÁPIDO
+Deportes,media,El Manchester United juega en la _____ League.,PREMIER
+Deportes,media,Boca Juniors juega en el estadio _____.,BOMBONERA
+Deportes,media,Los Angeles Lakers es un equipo de _____.,BÁSQUET
+Deportes,media,Serena Williams es una tenista de _____.,ESTADOS UNIDOS
+Deportes,media,El Barcelona tiene como apodo '_____'.,BARÇA
+Deportes,difícil,Gabriela Sabatini fue una tenista _____.,ARGENTINA
+Deportes,difícil,El primer Mundial de Fútbol se jugó en _____.,URUGUAY
+Deportes,difícil,Muhammad Ali se llamaba originalmente Cassius _____.,CLAY
+Deportes,difícil,River Plate fue fundado en el año _____.,1901
+Deportes,difícil,La Fórmula 1 tiene _____ escuderías actualmente.,DIEZ
+Deportes,difícil,Kobe Bryant usaba el número _____ en los Lakers.,24
+Deportes,difícil,El torneo de tenis de Wimbledon se juega sobre _____.,CÉSPED
+Deportes,difícil,Independiente de Avellaneda ganó _____ Copas Libertadores.,SIETE
+Deportes,difícil,Michael Phelps ganó _____ medallas olímpicas en total.,VEINTIOCHO
+Deportes,difícil,El primer campeón mundial de boxeo peso pesado fue John _____.,SULLIVAN
+General,fácil,El agua hierve a _____ grados centígrados.,CIEN
+General,fácil,Un año tiene _____ días.,TRESCIENTOS SESENTA Y CINCO
+General,fácil,La Tierra tiene _____ continentes.,SIETE
+General,fácil,El oro es un _____.,METAL
+General,fácil,El corazón tiene _____ cavidades.,CUATRO
+General,fácil,El ser humano tiene _____ sentidos.,CINCO
+General,fácil,La capital de Italia es _____.,ROMA
+General,fácil,El día tiene _____ horas.,VEINTICUATRO
+General,fácil,Un triángulo tiene _____ lados.,TRES
+General,fácil,El hielo es agua en estado _____.,SÓLIDO
+General,media,El oxígeno representa el _____% del aire.,VEINTIUNO
+General,media,La velocidad de la luz es de 300.000 _____ por segundo.,KILÓMETROS
+General,media,El ADN contiene la información _____.,GENÉTICA
+General,media,La Luna tarda _____ días en dar la vuelta a la Tierra.,VEINTIOCHO
+General,media,El elemento más abundante en el universo es el _____.,HIDRÓGENO
+General,media,Una década son _____ años.,DIEZ
+General,media,El Sistema Solar tiene _____ planetas.,OCHO
+General,media,La fórmula del agua es H2_____.,O
+General,media,El hueso más largo del cuerpo humano es el _____.,FÉMUR
+General,media,La capital de Japón es _____.,TOKIO
+General,difícil,El número áureo es aproximadamente _____.,1.618
+General,difícil,La constante de Planck es 6.626 x 10^-34 _____.,JULIOS
+General,difícil,El elemento químico con símbolo Au es el _____.,ORO
+General,difícil,La teoría de la relatividad fue propuesta por _____.,EINSTEIN
+General,difícil,El pH neutro es _____.,SIETE
+General,difícil,La mitocondria es la _____ de la célula.,CENTRAL ENERGÉTICA
+General,difícil,El teorema de Pitágoras se aplica a triángulos _____.,RECTÁNGULOS
+General,difícil,La unidad de medida de la corriente eléctrica es el _____.,AMPERIO
+General,difícil,El punto de fusión del hierro es _____ grados centígrados.,1538
+General,difícil,La Vía Láctea es una _____.,GALAXIA
+Geografía,fácil,La capital de Argentina es _____.,BUENOS AIRES
+Geografía,fácil,El río más largo del mundo es el _____.,NILO
+Geografía,fácil,El continente más grande es _____.,ASIA
+Geografía,fácil,La montaña más alta del mundo es el _____.,EVEREST
+Geografía,fácil,Brasil limita con _____.,ARGENTINA
+Geografía,fácil,El océano más grande es el _____.,PACÍFICO
+Geografía,fácil,La capital de Francia es _____.,PARIS
+Geografía,fácil,El desierto más grande del mundo es el _____.,SAHARA
+Geografía,fácil,La capital de España es _____.,MADRID
+Geografía,fácil,El río que pasa por Buenos Aires es el Río de la _____.,PLATA
+Geografía,media,La provincia más grande de Argentina es _____.,BUENOS AIRES
+Geografía,media,El estrecho que separa Argentina de Chile es el de _____.,MAGALLANES
+Geografía,media,La capital de Australia es _____.,CANBERRA
+Geografía,media,El país más poblado del mundo es _____.,CHINA
+Geografía,media,Las Cataratas del Iguazú están en la frontera entre Argentina y _____.,BRASIL
+Geografía,media,El cabo más austral de Argentina se llama Cabo de _____.,HORNOS
+Geografía,media,La capital de Canadá es _____.,OTTAWA
+Geografía,media,El mar que baña las costas argentinas es el Mar _____.,ARGENTINO
+Geografía,media,La meseta más grande de Argentina es la _____.,PATAGONIA
+Geografía,media,El lago más grande de Argentina es el _____.,ARGENTINO
+Geografía,difícil,La provincia argentina que no tiene salida al mar es _____.,SANTIAGO DEL ESTERO
+Geografía,difícil,El punto más alto de Argentina está en el _____.,ACONCAGUA
+Geografía,difícil,El país más pequeño del mundo es _____.,VATICANO
+Geografía,difícil,La capital de Mongolia es _____.,ULAN BATOR
+Geografía,difícil,El río Paraná nace en _____.,BRASIL
+Geografía,difícil,La provincia argentina con mayor cantidad de volcanes es _____.,CATAMARCA
+Geografía,difícil,El país con más husos horarios es _____.,RUSIA
+Geografía,difícil,La capital de Kazajistán es _____.,ASTANÁ
+Geografía,difícil,El glaciar más grande de Argentina es el _____.,UPSALA
+Geografía,difícil,La isla más grande de Argentina es _____.,GRANDE
+Historia,fácil,Cristóbal Colón llegó a América en _____.,1492
+Historia,fácil,La Segunda Guerra Mundial terminó en _____.,1945
+Historia,fácil,San Martín cruzó los _____.,ANDES
+Historia,fácil,Argentina se independizó en _____.,1816
+Historia,fácil,El Titanic se hundió en _____.,1912
+Historia,fácil,Napoleón Bonaparte era de _____.,FRANCIA
+Historia,fácil,La Revolución de Mayo ocurrió en _____.,1810
+Historia,fácil,El Imperio Romano tenía su capital en _____.,ROMA
+Historia,fácil,Hitler era de _____.,ALEMANIA
+Historia,fácil,La caída del Muro de Berlín fue en _____.,1989
+Historia,media,La Primera Guerra Mundial comenzó en _____.,1914
+Historia,media,Juan Domingo Perón fue presidente de _____.,ARGENTINA
+Historia,media,La Revolución Francesa comenzó en _____.,1789
+Historia,media,El Che Guevara nació en _____.,ARGENTINA
+Historia,media,La Guerra de Malvinas fue en _____.,1982
+Historia,media,Cristóbal Colón era de _____.,GÉNOVA
+Historia,media,La Conquista del Desierto la dirigió Julio Argentino _____.,ROCA
+Historia,media,Eva Perón murió en _____.,1952
+Historia,media,La bomba atómica se lanzó sobre Hiroshima en _____.,1945
+Historia,media,El Plan Marshall ayudó a reconstruir _____.,EUROPA
+Historia,difícil,La Batalla de Waterloo fue en _____.,1815
+Historia,difícil,El Cordobazo ocurrió en _____.,1969
+Historia,difícil,La Guerra de los Treinta Años terminó con la Paz de _____.,WESTFALIA
+Historia,difícil,Domingo Faustino Sarmiento fue presidente entre 1868 y _____.,1874
+Historia,difícil,La Revolución Rusa ocurrió en _____.,1917
+Historia,difícil,La Triple Alianza estaba formada por Argentina Brasil y _____.,URUGUAY
+Historia,difícil,El Tratado de Versalles se firmó en _____.,1919
+Historia,difícil,La Conquista de México la realizó Hernán _____.,CORTÉS
+Historia,difícil,La Guerra Civil Española duró desde 1936 hasta _____.,1939
+Historia,difícil,El Motín de Aranjuez ocurrió en _____.,1808

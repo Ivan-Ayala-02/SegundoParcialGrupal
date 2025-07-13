@@ -1,0 +1,82 @@
+{
+    "1": [
+        {
+            "tipo": "puntos",
+            "valor": 1000000
+        }
+    ],
+    "2": [
+        {
+            "tipo": "puntos",
+            "valor": 800000
+        },
+        {
+            "tipo": "puntos",
+            "valor": 800000
+        }
+    ],
+    "3": [
+        {
+            "tipo": "puntos",
+            "valor": 400000
+        },
+        {
+            "tipo": "puntos",
+            "valor": 400000
+        }
+    ],
+    "4": [
+        {
+            "tipo": "puntos",
+            "valor": 300000
+        },
+        {
+            "tipo": "puntos",
+            "valor": 300000
+        },
+        {
+            "tipo": "puntos",
+            "valor": 300000
+        }
+    ],
+    "5": [
+        {
+            "tipo": "puntos",
+            "valor": 100000
+        },
+        {
+            "tipo": "puntos",
+            "valor": 100000
+        },
+        {
+            "tipo": "puntos",
+            "valor": 100000
+        },
+        {
+            "tipo": "puntos",
+            "valor": 100000
+        }
+    ],
+    "6": [
+        {
+            "tipo": "puntos",
+            "valor": 50000
+        },
+        {
+            "tipo": "puntos",
+            "valor": 50000
+        }
+    ],
+    "7": [
+        {
+            "tipo": "vida",
+            "valor": 1
+        }
+    ],
+    "8": [
+        {
+            "tipo": "pierde_todo",
+            "valor": 0
+        }
+    ]
+}

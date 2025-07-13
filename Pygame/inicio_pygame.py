@@ -1,5 +1,6 @@
 import pygame
-from botones import *
+from modulos.botones import *
+from modulos.audio import *
 
 ANCHO_PANTALLA = 800
 ALTO_PANTALLA = 600
@@ -12,9 +13,11 @@ PANTALLA = pygame.display.set_mode((ANCHO_PANTALLA, ALTO_PANTALLA))
 fondo_juego = pygame.image.load("pygame/recursos/fondo.jpg")
 logo_juego = pygame.image.load("pygame/recursos/icono_menu.png")
 barassi = pygame.image.load("pygame/recursos/barassi_menu.png")
+pos_logo_juego = [320,30]
+pos_barassi = [-50,70]
 PANTALLA.blit(fondo_juego, (0,0))
-PANTALLA.blit(logo_juego, (320,30))
-PANTALLA.blit(barassi, (-50,70))
+PANTALLA.blit(logo_juego, pos_logo_juego)
+PANTALLA.blit(barassi, pos_barassi)
 
 # Genero el icono nombre de ventana -----------------------------------------------------
 
@@ -26,7 +29,7 @@ pygame.display.set_icon(icono_ventana)
 
 pygame.mixer.init()
 pygame.mixer.music.load("pygame/recursos/musica_menu.wav")
-pygame.mixer.music.set_volume(0.1) # Volumen del juego
+ajustar_volumen(0.1)
 
 # establezco los botones del MENU INICIO ------------------------------------------------
 
@@ -39,10 +42,10 @@ boton_salir = crear_boton(dimensiones=(30,30),
                           color_borde=None)
 
 boton_menu_principal = crear_boton(dimensiones=(50,150),
-                         posicion=(400,400),
+                         posicion=(450,400),
                          ventana=PANTALLA,
                          fuente=(fuente_texto),
-                         texto="Ingrese cualquier boton para continuar",
+                         texto="Presione enter para continuar",
                          color_borde=None)
                          
 lista_botones = [boton_salir, boton_menu_principal]
@@ -51,6 +54,13 @@ lista_botones = [boton_salir, boton_menu_principal]
 
 bandera_juego = True 
 musica_reproducida = False
+animacion_en_progreso = False
+
+'''def verificar_accion(tipo_evento, comparador, accion):
+    if tipo_evento == comparador:
+        accion
+
+def presionar_boton(boton:dict, evento):'''
 
 while bandera_juego:
 
@@ -59,11 +69,16 @@ while bandera_juego:
         musica_reproducida = True
 
     for evento in pygame.event.get():
-        
+        #print(evento)    
         if evento.type == pygame.QUIT:
             bandera_juego = False
-        
-        if evento.type == pygame.MOUSEBUTTONDOWN:
+
+        elif evento.type == pygame.KEYDOWN:
+            if evento.key == pygame.K_RETURN:
+                animacion_en_progreso = True
+                lista_botones.remove(boton_menu_principal)
+    
+        elif evento.type == pygame.MOUSEBUTTONDOWN:
             if boton_salir["rectangulo"].collidepoint(evento.pos):
                 boton_salir["presionado"] = True
 
@@ -71,6 +86,25 @@ while bandera_juego:
 
     if boton_salir["presionado"] == True:
         bandera_juego = False
+    
+    if animacion_en_progreso:
+    # Mover logo_juego hacia el centro (400, 300)
+        if pos_logo_juego[0] < 140:
+            pos_logo_juego[0] += 2
+        elif pos_logo_juego[0] > 140:
+            pos_logo_juego[0] -= 2
+    
+        if pos_barassi[0] > -barassi.get_width():
+            pos_barassi[0] -= 4
+    
+        PANTALLA.blit(fondo_juego, (0,0))  # Redibuja el fondo
+        PANTALLA.blit(logo_juego, pos_logo_juego)
+        PANTALLA.blit(barassi, pos_barassi)
+
+        if pos_logo_juego == [140, 30] and pos_barassi[0] <= -barassi.get_width():
+            animacion_en_progreso = False
+        
+        print(animacion_en_progreso)
 
     pygame.display.update()
 

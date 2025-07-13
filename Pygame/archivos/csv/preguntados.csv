@@ -1,0 +1,151 @@
+categoria,dificultad,pregunta,opcion1,opcion2,opcion3,opcion4,respuesta
+Cultura General,fácil,¿Quién pintó la Mona Lisa?,1) Miguel Ángel,2) Leonardo da Vinci,3) Picasso,4) Van Gogh,2
+Cultura General,fácil,¿Cuál es el instrumento de Beethoven?,1) Violín,2) Piano,3) Guitarra,4) Flauta,2
+Cultura General,fácil,¿Quién escribió Romeo y Julieta?,1) Cervantes,2) Shakespeare,3) Dante,4) Goethe,2
+Cultura General,fácil,¿Cuál es la obra más famosa de Picasso?,1) La Gioconda,2) Guernica,3) La Noche Estrellada,4) El Grito,2
+Cultura General,fácil,¿Quién fue el Rey del Pop?,1) Elvis Presley,2) Michael Jackson,3) Prince,4) Madonna,2
+Cultura General,fácil,¿Cuántas cuerdas tiene una guitarra?,1) 4,2) 5,3) 6,4) 7,3
+Cultura General,fácil,¿Dónde está el Museo del Louvre?,1) Londres,2) París,3) Roma,4) Madrid,2
+Cultura General,fácil,¿Quién escribió Don Quijote?,1) Shakespeare,2) Cervantes,3) Lope de Vega,4) Góngora,2
+Cultura General,fácil,¿Cuál es el baile típico de Argentina?,1) Salsa,2) Tango,3) Flamenco,4) Samba,2
+Cultura General,fácil,¿Quién creó Mickey Mouse?,1) Walt Disney,2) Warner Bros,3) Hanna-Barbera,4) Pixar,1
+Cultura General,media,¿Dónde está la Capilla Sixtina?,1) París,2) Vaticano,3) Londres,4) Florencia,2
+Cultura General,media,¿Quién compuso La Novena Sinfonía?,1) Mozart,2) Beethoven,3) Bach,4) Chopin,2
+Cultura General,media,¿Cuál es la novela más famosa de García Márquez?,1) El Amor en los Tiempos del Cólera,2) Cien Años de Soledad,3) Crónica de una Muerte Anunciada,4) El Coronel no Tiene Quien le Escriba,2
+Cultura General,media,¿Dónde está el Teatro Colón?,1) Madrid,2) Buenos Aires,3) París,4) Milán,2
+Cultura General,media,¿Quién escribió 1984?,1) Aldous Huxley,2) George Orwell,3) Ray Bradbury,4) Isaac Asimov,2
+Cultura General,media,¿Cuál es la sinfonía más famosa de Mozart?,1) Sinfonía 39,2) Sinfonía 40,3) Sinfonía 41,4) Sinfonía 25,2
+Cultura General,media,¿Quién pintó La Noche Estrellada?,1) Picasso,2) Van Gogh,3) Monet,4) Dalí,2
+Cultura General,media,¿Dónde nació Mozart?,1) Viena,2) Salzburgo,3) Berlín,4) Praga,2
+Cultura General,media,¿Cuál es la ópera más famosa de Verdi?,1) Rigoletto,2) La Traviata,3) Aida,4) Il Trovatore,2
+Cultura General,media,¿Quién escribió El Principito?,1) Julio Verne,2) Saint-Exupéry,3) Victor Hugo,4) Marcel Proust,2
+Cultura General,difícil,¿Cuál es el nombre real de Voltaire?,1) François-Marie Arouet,2) Jean-Baptiste Poquelin,3) Pierre Corneille,4) Jean Racine,1
+Cultura General,difícil,¿Quién compuso El Anillo del Nibelungo?,1) Bach,2) Wagner,3) Brahms,4) Liszt,2
+Cultura General,difícil,¿En qué ciudad nació Borges?,1) Córdoba,2) Buenos Aires,3) Rosario,4) Mendoza,2
+Cultura General,difícil,¿Cuál es la obra cumbre de Dante?,1) La Vita Nuova,2) La Divina Comedia,3) El Convivio,4) De Monarchia,2
+Cultura General,difícil,¿Quién escribió Ulises?,1) Virginia Woolf,2) James Joyce,3) T.S. Eliot,4) Ezra Pound,2
+Cultura General,difícil,¿Cuál es el verdadero nombre de Pablo Neruda?,1) Ricardo Reyes,2) Neftalí Reyes,3) Pablo Reyes,4) Gonzalo Reyes,2
+Cultura General,difícil,¿Quién pintó Las Meninas?,1) Goya,2) Velázquez,3) El Greco,4) Murillo,2
+Cultura General,difícil,¿En qué siglo vivió Bach?,1) XVII,2) XVIII,3) XVI,4) XIX,2
+Cultura General,difícil,¿Cuál es el museo más grande del mundo?,1) Louvre,2) Hermitage,3) Metropolitan,4) British Museum,1
+Cultura General,difícil,¿Quién escribió Madame Bovary?,1) Stendhal,2) Flaubert,3) Balzac,4) Zola,2
+Deportes,fácil,¿Cuántos jugadores tiene un equipo de fútbol?,1) 9,2) 10,3) 11,4) 12,3
+Deportes,fácil,¿En qué deporte se usa una raqueta?,1) Fútbol,2) Tenis,3) Natación,4) Atletismo,2
+Deportes,fácil,¿Cuál es el deporte más popular del mundo?,1) Básquet,2) Fútbol,3) Tenis,4) Béisbol,2
+Deportes,fácil,¿Quién es conocido como 'El Rey del Fútbol'?,1) Maradona,2) Messi,3) Pelé,4) Ronaldo,3
+Deportes,fácil,¿En qué deporte compite Tiger Woods?,1) Tenis,2) Golf,3) Boxeo,4) Atletismo,2
+Deportes,fácil,¿Cada cuántos años se celebran los Juegos Olímpicos?,1) 2 años,2) 3 años,3) 4 años,4) 5 años,3
+Deportes,fácil,¿Cuál es el deporte nacional de Argentina?,1) Fútbol,2) Pato,3) Tenis,4) Polo,2
+Deportes,fácil,¿En qué deporte se anota en una canasta?,1) Fútbol,2) Tenis,3) Básquet,4) Volleyball,3
+Deportes,fácil,¿Cuántos sets se necesitan para ganar un partido de tenis masculino en Grand Slam?,1) 2,2) 3,3) 4,4) 5,2
+Deportes,fácil,¿Qué equipo argentino se llama 'Los Millonarios'?,1) Boca,2) River,3) Racing,4) Independiente,2
+Deportes,media,¿En qué año ganó Argentina el Mundial de Fútbol en Qatar?,1) 2018,2) 2022,3) 2021,4) 2023,2
+Deportes,media,¿Cuál es el estadio de Boca Juniors?,1) Monumental,2) La Bombonera,3) El Cilindro,4) Libertadores,2
+Deportes,media,¿Quién hizo el gol con la mano en el Mundial de 1986?,1) Pelé,2) Maradona,3) Messi,4) Kempes,2
+Deportes,media,¿Cuántas medallas de oro ganó Michael Phelps?,1) 18,2) 20,3) 23,4) 25,3
+Deportes,media,¿En qué ciudad se jugó el primer Mundial de Fútbol?,1) Brasil,2) Argentina,3) Uruguay,4) Chile,3
+Deportes,media,¿Cuál es el torneo de tenis más prestigioso?,1) Roland Garros,2) Wimbledon,3) US Open,4) Australian Open,2
+Deportes,media,¿Quién es el máximo goleador de la historia de los Mundiales?,1) Pelé,2) Maradona,3) Messi,4) Miroslav Klose,4
+Deportes,media,¿En qué año se fundó River Plate?,1) 1901,2) 1905,3) 1910,4) 1895,1
+Deportes,media,¿Cuál es el récord mundial de los 100 metros planos?,1) 9.58,2) 9.63,3) 9.69,4) 9.72,1
+Deportes,media,¿Quién ganó más Copas Libertadores como club argentino?,1) Boca,2) River,3) Independiente,4) Estudiantes,3
+Deportes,difícil,¿En qué año se creó la FIFA?,1) 1904,2) 1906,3) 1910,4) 1900,1
+Deportes,difícil,¿Cuál es el único club que ganó 5 Champions League consecutivas?,1) Barcelona,2) Milan,3) Real Madrid,4) Bayern Munich,3
+Deportes,difícil,¿Quién fue el primer campeón de Fórmula 1?,1) Juan Manuel Fangio,2) Giuseppe Farina,3) Alberto Ascari,4) Mike Hawthorn,2
+Deportes,difícil,¿En qué año se jugó el primer Superclásico?,1) 1913,2) 1914,3) 1915,4) 1916,1
+Deportes,difícil,¿Cuál es el peso máximo en boxeo peso pesado?,1) No hay límite,2) 90 kg,3) 100 kg,4) 110 kg,1
+Deportes,difícil,¿Quién tiene el récord de más Grand Slams en tenis masculino?,1) Federer,2) Nadal,3) Djokovic,4) Sampras,3
+Deportes,difícil,¿En qué año se fundó el Comité Olímpico Internacional?,1) 1894,2) 1896,3) 1900,4) 1892,1
+Deportes,difícil,¿Cuál es el único jugador que ganó 3 Mundiales?,1) Maradona,2) Pelé,3) Messi,4) Ronaldo,2
+Deportes,difícil,¿En qué estadio se jugó la final del Mundial 1978?,1) Monumental,2) Bombonera,3) Rosario Central,4) Estadio Único,1
+Deportes,difícil,¿Quién es el máximo goleador de la historia de la Premier League?,1) Thierry Henry,2) Alan Shearer,3) Wayne Rooney,4) Harry Kane,2
+General,fácil,¿Cuántos huesos tiene el cuerpo humano?,1) 198,2) 206,3) 212,4) 220,2
+General,fácil,¿Cuántos sentidos tiene el ser humano?,1) 4,2) 5,3) 6,4) 7,2
+General,fácil,¿A qué temperatura hierve el agua?,1) 90°C,2) 100°C,3) 110°C,4) 120°C,2
+General,fácil,¿Cuál es el planeta más cercano al Sol?,1) Venus,2) Mercurio,3) Tierra,4) Marte,2
+General,fácil,¿Cuántos días tiene un año?,1) 364,2) 365,3) 366,4) 367,2
+General,fácil,¿Cuál es el gas más abundante en la atmósfera?,1) Oxígeno,2) Nitrógeno,3) Dióxido de carbono,4) Hidrógeno,2
+General,fácil,¿Cuántas horas tiene un día?,1) 23,2) 24,3) 25,4) 26,2
+General,fácil,¿Cuál es el órgano más grande del cuerpo humano?,1) Hígado,2) Piel,3) Cerebro,4) Corazón,2
+General,fácil,¿Cuántos lados tiene un triángulo?,1) 2,2) 3,3) 4,4) 5,2
+General,fácil,¿Cuál es el metal más abundante en la Tierra?,1) Hierro,2) Aluminio,3) Cobre,4) Oro,2
+General,media,¿Cuántos planetas tiene el Sistema Solar?,1) 7,2) 8,3) 9,4) 10,2
+General,media,¿Cuál es la velocidad de la luz?,1) 300.000 km/s,2) 299.792.458 m/s,3) 186.000 millas/s,4) Todas son correctas,4
+General,media,¿Cuál es el hueso más largo del cuerpo humano?,1) Húmero,2) Fémur,3) Tibia,4) Radio,2
+General,media,¿Qué significa ADN?,1) Ácido Desoxirribonucleico,2) Ácido Ribonucleico,3) Antígeno Nuclear,4) Aminoácido Nucleico,1
+General,media,¿Cuál es el elemento más abundante en el universo?,1) Oxígeno,2) Hidrógeno,3) Helio,4) Carbono,2
+General,media,¿Cuántos grados tiene un círculo?,1) 180,2) 360,3) 270,4) 90,2
+General,media,¿Cuál es la fórmula química del agua?,1) H2O,2) H2O2,3) HO2,4) H3O,1
+General,media,¿Cuánto tarda la luz del Sol en llegar a la Tierra?,1) 8 minutos,2) 8 minutos y 20 segundos,3) 10 minutos,4) 5 minutos,2
+General,media,¿Cuál es el pH neutro?,1) 6,2) 7,3) 8,4) 9,2
+General,media,¿Cuántos cromosomas tiene el ser humano?,1) 44,2) 46,3) 48,4) 50,2
+General,difícil,¿Cuál es la constante de Planck?,1) 6.626 x 10^-34 J·s,2) 3.14159,3) 2.71828,4) 9.81 m/s²,1
+General,difícil,¿Cuál es el número atómico del oro?,1) 79,2) 80,3) 78,4) 81,1
+General,difícil,¿Cuántos huesos tiene un recién nacido?,1) 206,2) 270,3) 300,4) 350,2
+General,difícil,¿Cuál es la partícula subatómica con carga positiva?,1) Electrón,2) Protón,3) Neutrón,4) Fotón,2
+General,difícil,¿Cuál es el punto de fusión del hierro?,1) 1538°C,2) 1500°C,3) 1600°C,4) 1450°C,1
+General,difícil,¿Cuántos años luz mide la Vía Láctea?,1) 50.000,2) 100.000,3) 150.000,4) 200.000,2
+General,difícil,¿Cuál es la unidad básica de la herencia?,1) Cromosoma,2) Gen,3) ADN,4) Célula,2
+General,difícil,¿Cuál es el elemento con mayor punto de fusión?,1) Tungsteno,2) Carbono,3) Renio,4) Osmio,1
+General,difícil,¿Cuántos protones tiene el carbono?,1) 5,2) 6,3) 7,4) 8,2
+General,difícil,¿Cuál es la constante de Avogadro?,1) 6.022 x 10^23,2) 6.626 x 10^-34,3) 3.14159,4) 2.71828,1
+Geografía,fácil,¿Cuál es la capital de Francia?,1) Londres,2) París,3) Roma,4) Madrid,2
+Geografía,fácil,¿Cuál es el río más largo del mundo?,1) Amazonas,2) Nilo,3) Yangtsé,4) Misisipi,2
+Geografía,fácil,¿Cuántos continentes hay?,1) 5,2) 6,3) 7,4) 8,3
+Geografía,fácil,¿Cuál es el país más grande del mundo?,1) China,2) Estados Unidos,3) Rusia,4) Canadá,3
+Geografía,fácil,¿Cuál es la montaña más alta del mundo?,1) Aconcagua,2) Everest,3) K2,4) Kilimanjaro,2
+Geografía,fácil,¿En qué continente está Argentina?,1) Asia,2) Europa,3) América,4) África,3
+Geografía,fácil,¿Cuál es el océano más grande?,1) Atlántico,2) Pacífico,3) Índico,4) Ártico,2
+Geografía,fácil,¿Cuál es la capital de España?,1) Barcelona,2) Madrid,3) Valencia,4) Sevilla,2
+Geografía,fácil,¿Qué país tiene forma de bota?,1) España,2) Francia,3) Italia,4) Grecia,3
+Geografía,fácil,¿Cuál es el desierto más grande del mundo?,1) Kalahari,2) Sahara,3) Gobi,4) Atacama,2
+Geografía,media,¿Cuál es la capital de Australia?,1) Sydney,2) Melbourne,3) Canberra,4) Perth,3
+Geografía,media,¿Qué estrecho separa Argentina de Chile?,1) Magallanes,2) Beagle,3) Drake,4) Lemaire,1
+Geografía,media,¿Cuál es el país más poblado del mundo?,1) India,2) China,3) Estados Unidos,4) Indonesia,2
+Geografía,media,¿En qué provincia están las Cataratas del Iguazú?,1) Corrientes,2) Misiones,3) Entre Ríos,4) Formosa,2
+Geografía,media,¿Cuál es la capital de Canadá?,1) Toronto,2) Montreal,3) Ottawa,4) Vancouver,3
+Geografía,media,¿Qué cordillera atraviesa Argentina?,1) Himalaya,2) Andes,3) Alpes,4) Rocosas,2
+Geografía,media,¿Cuál es el lago más grande de Argentina?,1) Nahuel Huapi,2) Argentino,3) Viedma,4) Fagnano,2
+Geografía,media,¿En qué hemisferio está Argentina?,1) Norte,2) Sur,3) Este,4) Oeste,2
+Geografía,media,¿Cuál es el punto más alto de Argentina?,1) Cerro Catedral,2) Aconcagua,3) Fitz Roy,4) Ojos del Salado,2
+Geografía,media,¿Qué río pasa por Buenos Aires?,1) Paraná,2) Río de la Plata,3) Uruguay,4) Salado,2
+Geografía,difícil,¿Cuál es el país más pequeño del mundo?,1) Mónaco,2) Vaticano,3) San Marino,4) Liechtenstein,2
+Geografía,difícil,¿Cuál es la capital de Mongolia?,1) Ulan Bator,2) Almaty,3) Taskent,4) Astana,1
+Geografía,difícil,¿En qué océano está Madagascar?,1) Atlántico,2) Pacífico,3) Índico,4) Ártico,3
+Geografía,difícil,¿Cuál es el río más caudaloso del mundo?,1) Nilo,2) Amazonas,3) Congo,4) Yangtsé,2
+Geografía,difícil,¿Qué país tiene más husos horarios?,1) Estados Unidos,2) China,3) Rusia,4) Canadá,3
+Geografía,difícil,¿Cuál es la capital de Kazajistán?,1) Almaty,2) Astana,3) Biskek,4) Taskent,2
+Geografía,difícil,¿En qué mar está ubicada la Isla de Pascua?,1) Mediterráneo,2) Pacífico,3) Atlántico,4) Caribe,2
+Geografía,difícil,¿Cuál es el volcán más alto del mundo?,1) Chimborazo,2) Cotopaxi,3) Ojos del Salado,4) Aconcagua,3
+Geografía,difícil,¿Qué país africano nunca fue colonizado?,1) Liberia,2) Etiopía,3) Sudáfrica,4) Egipto,2
+Geografía,difícil,¿Cuál es la isla más grande del mundo?,1) Australia,2) Groenlandia,3) Madagascar,4) Borneo,2
+Historia,fácil,¿En qué año llegó Colón a América?,1) 1490,2) 1491,3) 1492,4) 1493,3
+Historia,fácil,¿Cuándo terminó la Segunda Guerra Mundial?,1) 1944,2) 1945,3) 1946,4) 1947,2
+Historia,fácil,¿Quién fue el primer presidente de Argentina?,1) San Martín,2) Belgrano,3) Rivadavia,4) Mitre,3
+Historia,fácil,¿En qué año se independizó Argentina?,1) 1810,2) 1816,3) 1820,4) 1825,2
+Historia,fácil,¿Cuándo ocurrió la Revolución de Mayo?,1) 1810,2) 1816,3) 1820,4) 1825,1
+Historia,fácil,¿Quién cruzó los Andes?,1) Belgrano,2) San Martín,3) Güemes,4) Brown,2
+Historia,fácil,¿En qué año cayó el Muro de Berlín?,1) 1987,2) 1988,3) 1989,4) 1990,3
+Historia,fácil,¿Cuándo comenzó la Primera Guerra Mundial?,1) 1914,2) 1915,3) 1916,4) 1917,1
+Historia,fácil,¿Quién fue Napoleón Bonaparte?,1) Rey de Francia,2) Emperador francés,3) General inglés,4) Papa,2
+Historia,fácil,¿En qué siglo vivió Jesucristo?,1) Siglo I,2) Siglo II,3) Siglo III,4) Siglo IV,1
+Historia,media,¿Cuándo comenzó la Revolución Francesa?,1) 1789,2) 1790,3) 1791,4) 1792,1
+Historia,media,¿Quién fue el último emperador de China?,1) Mao Zedong,2) Puyi,3) Deng Xiaoping,4) Chiang Kai-shek,2
+Historia,media,¿En qué año ocurrió la Guerra de Malvinas?,1) 1981,2) 1982,3) 1983,4) 1984,2
+Historia,media,¿Cuándo murió Eva Perón?,1) 1951,2) 1952,3) 1953,4) 1954,2
+Historia,media,¿En qué año llegó el hombre a la Luna?,1) 1968,2) 1969,3) 1970,4) 1971,2
+Historia,media,¿Quién fue el Che Guevara?,1) Cubano,2) Argentino,3) Boliviano,4) Mexicano,2
+Historia,media,¿Cuándo ocurrió la Revolución Rusa?,1) 1916,2) 1917,3) 1918,4) 1919,2
+Historia,media,¿En qué año se firmó el Tratado de Versalles?,1) 1918,2) 1919,3) 1920,4) 1921,2
+Historia,media,¿Quién fue presidente de Argentina entre 1946-1955?,1) Yrigoyen,2) Perón,3) Illia,4) Frondizi,2
+Historia,media,¿Cuándo ocurrió el Cordobazo?,1) 1968,2) 1969,3) 1970,4) 1971,2
+Historia,difícil,¿En qué año se firmó la Declaración de Independencia de Estados Unidos?,1) 1775,2) 1776,3) 1777,4) 1778,2
+Historia,difícil,¿Quién fue el primer Virrey del Río de la Plata?,1) Cevallos,2) Vértiz,3) Cisneros,4) Liniers,1
+Historia,difícil,¿Cuándo ocurrió la Batalla de Caseros?,1) 1851,2) 1852,3) 1853,4) 1854,2
+Historia,difícil,¿En qué año se fundó la ciudad de Buenos Aires por segunda vez?,1) 1580,2) 1581,3) 1582,4) 1583,1
+Historia,difícil,¿Quién fue el líder de la Revolución Cubana?,1) Che Guevara,2) Fidel Castro,3) Raúl Castro,4) Camilo Cienfuegos,2
+Historia,difícil,¿Cuándo terminó la Guerra de los Treinta Años?,1) 1648,2) 1649,3) 1650,4) 1651,1
+Historia,difícil,¿En qué año se abolió la esclavitud en Argentina?,1) 1813,2) 1814,3) 1815,4) 1816,1
+Historia,difícil,¿Quién fue el primer presidente de Estados Unidos?,1) Thomas Jefferson,2) George Washington,3) John Adams,4) Benjamin Franklin,2
+Historia,difícil,¿Cuándo ocurrió la Conquista de Granada?,1) 1491,2) 1492,3) 1493,4) 1494,2
+Historia,difícil,¿En qué batalla murió el General San Martín?,1) Chacabuco,2) Maipú,3) Nunca murió en batalla,4) Ayacucho,3

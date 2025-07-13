@@ -1,0 +1,28 @@
+{   
+    "ancho_pantalla" : 800,
+    "alto_pantalla" : 600,
+    "rondas": 12,
+    "cambio_de_juego": 3,
+    "tiempos_limite": {
+        "si_o_no": 10,
+        "completar_oracion": 20,
+        "completar_palabra": 20,
+        "palabra_desordenada": 20,
+        "preguntados": 15
+    },
+    "accesibilidad": "neurotipico",
+    "estado_inicial": {
+        "vida": 1,
+        "fichas": 3,
+        "puntos": 0,
+        "aciertos": 0,
+        "fallos": 0,
+        "tiempo_por_aciertos": [],
+        "preguntas_falladas": []
+    },
+    "dificultades": [
+        "fácil",
+        "media",
+        "difícil"
+    ]
+}
