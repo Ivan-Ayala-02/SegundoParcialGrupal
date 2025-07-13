@@ -22,12 +22,17 @@ def intro():
     cargar_audio("recursos/musica_menu.wav")
     ajustar_volumen(0.3)
 
+    lista_opciones = ["Jugar", "Reglas", "Estadisticas", "Extras", "Salir"]
+    lista_botones = crear_botones_opciones(lista_opciones, LONGITUD_PANTALLA, (50,40), fuente_texto, (320,310), 10)
+
     bucle_intro =True
     musica_menu = False
     animacion_intro = False
     ingreso_menu_principal = False
+    estado_animacion = False
 
     while bucle_intro:
+
         if musica_menu == False:
             pygame.mixer.music.play(-1) # Reproduce en bucle infinito
             musica_menu = True
@@ -35,43 +40,34 @@ def intro():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 bucle_intro = False
-                pygame.quit()
-                return
             
             if event.type == pygame.KEYDOWN:
                 if animacion_intro == False and ingreso_menu_principal == False:
                     animacion_intro = True
+
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                for boton in lista_botones:
+                    if boton["rectangulo"].collidepoint(event.pos):
+                        boton["presionado"] = True
         
         if animacion_intro:
             estado_animacion = animar_intro(LONGITUD_PANTALLA, fondo, logo_juego, coordenadas_logo)
 
-            if estado_animacion:
-                bucle_intro = False
+        if estado_animacion:
+            animacion_intro = False
+            ingreso_menu_principal = True
+
+        if ingreso_menu_principal:
+            dibujar_lista_botones(lista_botones)
+
+        for boton in lista_botones:
+            if boton["texto"] == "Salir":
+                if boton["presionado"] == True:
+                    bucle_intro = False
 
         pygame.display.update()
-
-def menu_principal():
-    fondo, logo_juego, barassi = cargar_imagenes_intro()
-    mostrar_imagen(fondo, LONGITUD_PANTALLA, (0,0))
-    mostrar_imagen(logo_juego, LONGITUD_PANTALLA, (320,30))
-    lista_opciones = ["Jugar", "Reglas", "Estadisticas", "Extras", "Salir"]
-    lista_botones = crear_botones_opciones(lista_opciones, LONGITUD_PANTALLA, (50,150), fuente_texto, (300,300), 10)
     
-    bucle_menu = True
-    while bucle_menu:
-        dibujar_lista_botones(lista_botones)
-
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                bucle_menu = False
-                pygame.quit()
-                return
+    pygame.quit()
     
-        pygame.display.update()
-        
-    
-
-
 #main()
 intro()
-menu_principal()

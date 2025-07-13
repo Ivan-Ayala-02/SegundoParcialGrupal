@@ -18,17 +18,17 @@ def mostrar_imagen(imagen, ventana, coordenadas):
 
 def mover_imagen(coordenadas_base:list, coordenadas_final:list, velocidad=1) -> bool:
     
-    if coordenadas_base[0] < coordenadas_final[0]:
-        coordenadas_base[0] += velocidad
-    elif coordenadas_base[0] > coordenadas_final[0]:
-        coordenadas_base[0] -= velocidad
-    
-    if coordenadas_base[1] < coordenadas_final[1]:
-        coordenadas_base[1] += velocidad
-    elif coordenadas_base[1] > coordenadas_final[1]:
-        coordenadas_base[1] -= velocidad
-    
-    if coordenadas_base == coordenadas_final:
+    for i in range(2):
+        if coordenadas_base[i] < coordenadas_final[i]:
+            coordenadas_base[i] += velocidad
+            if coordenadas_base[i] > coordenadas_final[i]:
+                coordenadas_base[i] = coordenadas_final[i]
+        elif coordenadas_base[i] > coordenadas_final[i]:
+            coordenadas_base[i] -= velocidad
+            if coordenadas_base[i] < coordenadas_final[i]:
+                coordenadas_base[i] = coordenadas_final[i]
+
+    if (coordenadas_base[0] == coordenadas_final[0]) and (coordenadas_base[1] == coordenadas_final[1]):
         estado_animacion = True
     else:
         estado_animacion = False
