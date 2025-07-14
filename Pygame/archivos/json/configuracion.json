@@ -1,7 +1,7 @@
 {   
     "ancho_pantalla" : 800,
     "alto_pantalla" : 600,
-    "rondas": 12,
+    "rondas": 2,
     "cambio_de_juego": 3,
     "tiempos_limite": {
         "si_o_no": 10,

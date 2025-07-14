@@ -1,13 +1,26 @@
-#from modulos.utilidades import elegir_elemento_aleatorio_y_remover, lista_vacia
-from modulos.utilidades import *
-from modulos.mini_juegos.utilidades_mini_juegos import *
+import pygame
+import time
+from modulos.boton import crear_boton, dibujar_lista_botones
+from modulos.utilidades import lista_vacia, elegir_elemento_aleatorio_y_remover, comparar_respuestas, mostrar_pregunta, mostrar_tiempo, mostrar_estado_jugador
 from modulos.tiempo import obtener_tiempo_limite
-from modulos.entrada import es_cadena_vacia
+import sys
 
-def jugar_si_o_no(recursos_mini_juego: dict) -> bool:
+
+def jugar_si_o_no(pantalla, recursos_mini_juego: dict) -> bool:
+    fuente = pygame.font.SysFont("Segoe UI Emoji", 20)
+    reloj = pygame.time.Clock()
+
+    ancho, alto = pantalla.get_size()  # 🔥 Obtenés dimensiones actuales
+
+    # Ahora podés usar ancho y alto en cualquier cálculo
+    centro_x = ancho // 2
+    centro_y = alto // 2
+
+    fondo = pygame.image.load("recursos\\fondo.jpg")
+    fondo = pygame.transform.scale(fondo, (ancho, alto))  # Redimensiona si es necesario
+
     preguntas = recursos_mini_juego["preguntas"]
-    jugador = recursos_mini_juego["jugador"]
-    ronda = recursos_mini_juego["ronda"]
+    estado_jugador = recursos_mini_juego["jugador"]
     config = recursos_mini_juego["configuracion"]
     juego = recursos_mini_juego["juego"]
 
@@ -17,181 +30,145 @@ def jugar_si_o_no(recursos_mini_juego: dict) -> bool:
 
     tiempo_limite = obtener_tiempo_limite(config, juego)
 
-    se_respondio = False
-    resultado_final = False  # Valor predeterminado
+    fuente_texto = ("Segoe UI Emoji", 20)
+    boton_si = crear_boton((180, 60), (ancho//4, 360), pantalla, "white", fuente=("Arial", 30), texto="SI")
+    boton_no = crear_boton((180, 60), ((ancho//4 + 200), 360), pantalla, "white", fuente=("Arial", 30), texto="NO")
+    botones = [boton_si, boton_no]
 
-    while not se_respondio:
-        dato = elegir_elemento_aleatorio_y_remover(preguntas)
+    dato = elegir_elemento_aleatorio_y_remover(preguntas)
+    respuesta = None
+    inicio = time.time()
 
-        mostrar_encabezado(ronda, juego, dato, jugador, "pregunta", "Pregunta")
+    while True:
+        tiempo_transcurrido = time.time() - inicio
+        tiempo_restante = max(0, int(tiempo_limite - tiempo_transcurrido))
 
-        respuesta, duracion = pedir_respuesta_usuario(
-            "Escriba la respuesta (si/no): ", es_si_no_o_ficha, tiempo_limite
-        )
+        for evento in pygame.event.get():
+            if evento.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            elif evento.type == pygame.MOUSEBUTTONDOWN:
+                if boton_si["rectangulo"].collidepoint(evento.pos):
+                    respuesta = "si"
+                elif boton_no["rectangulo"].collidepoint(evento.pos):
+                    respuesta = "no"
 
-        resultado = evaluar_respuesta_en_minijuego(
-            respuesta, dato["respuesta"], jugador, duracion, dato["pregunta"]
-        )
-
-        if resultado != "cambio":
-            resultado_final = resultado
-            se_respondio = True
-
-    return resultado_final
-
-def jugar_completar_oracion(recursos_mini_juego: dict) -> bool:
-    oraciones = recursos_mini_juego["preguntas"]
-    jugador = recursos_mini_juego["jugador"]
-    ronda = recursos_mini_juego["ronda"]
-    config = recursos_mini_juego["configuracion"]
-    juego = recursos_mini_juego["juego"]
-
-    if lista_vacia(oraciones):
-        print("No hay más oraciones disponibles para completar.")
-        return False
-
-    tiempo_limite = obtener_tiempo_limite(config, juego)
-
-    se_respondio = False
-    resultado_final = False  # valor por defecto
-
-    while not se_respondio:
-        dato = elegir_elemento_aleatorio_y_remover(oraciones)
-
-        mostrar_encabezado(ronda, juego, dato, jugador, "oracion", "Oracion")
-
-        respuesta, duracion = pedir_respuesta_usuario(
-            "Completa la oración: ", es_cadena_vacia, tiempo_limite
-        )
-
-        resultado = evaluar_respuesta_en_minijuego(
-            respuesta, dato["respuesta"], jugador, duracion, dato["oracion"]
-        )
-
-        if resultado != "cambio":
-            resultado_final = resultado
-            se_respondio = True
-        # si fue "cambio", no pasa nada, se repite el while
-
-    return resultado_final
-
-
-def jugar_completar_palabra(recursos_mini_juego: dict) -> bool:
-    palabras = recursos_mini_juego["preguntas"]
-    jugador = recursos_mini_juego["jugador"]
-    ronda = recursos_mini_juego["ronda"]
-    config = recursos_mini_juego["configuracion"]
-    juego = recursos_mini_juego["juego"]
-
-    if lista_vacia(palabras):
-        print("No hay más palábras disponibles para completar.")
-        return False
-
-    tiempo_limite = obtener_tiempo_limite(config, juego)
-
-    se_respondio = False
-    resultado_final = False  # valor por defecto
-
-    while not se_respondio:
-        dato = elegir_elemento_aleatorio_y_remover(palabras)
-
-        mostrar_encabezado(ronda, juego, dato, jugador, "pista", dato["palabra"])
-
-        respuesta, duracion = pedir_respuesta_usuario(
-            "Completa la palábra: ", es_alfabetica, tiempo_limite
-        )
-
-        resultado = evaluar_respuesta_en_minijuego(
-            respuesta, dato["respuesta"], jugador, duracion, dato["palabra"]
-        )
-
-        if resultado != "cambio":
-            resultado_final = resultado
-            se_respondio = True
-        # si fue "cambio", no pasa nada, se repite el while
-
-    return resultado_final
-
-def jugar_preguntados(recursos_mini_juego: dict) -> bool:
-    preguntas = recursos_mini_juego["preguntas"]
-    jugador = recursos_mini_juego["jugador"]
-    ronda = recursos_mini_juego["ronda"]
-    config = recursos_mini_juego["configuracion"]
-    juego = recursos_mini_juego["juego"]
-
-    if lista_vacia(preguntas):
-        print("No hay más preguntas disponibles.")
-        return False
-
-    tiempo_limite = obtener_tiempo_limite(config, juego)
-
-    se_respondio = False
-    resultado_final = False
-
-    while not se_respondio and preguntas:
-        dato = elegir_elemento_aleatorio_y_remover(preguntas)
-
-        mostrar_encabezado(ronda, juego, dato, jugador,"pregunta", "Pregunta")
-
-        respuesta, duracion = pedir_respuesta_usuario(
-            "Elegir una de las opciones: ", es_numerico_o_ficha, tiempo_limite
-        )
-
-        resultado = evaluar_respuesta_en_minijuego(
-            respuesta, dato["respuesta"], jugador, duracion, dato["pregunta"]
-        )
-
-        if resultado != "cambio":
-            resultado_final = resultado
-            se_respondio = True
-
-    return resultado_final
-
-def minijuego_buscaminas(filas:int, columnas:int, cantidad_minas:int, datos_tablero:dict):
-    system("cls")
-    bloque_visual_ocupado = datos_tablero["bloque_visual_ocupado"]
-    bloque_visual_mina = datos_tablero["bloque_visual_mina"]
-    caracter_real_bloque = datos_tablero["caracter_real_bloque"]
-    caracter_real_mina = datos_tablero["caracter_real_mina"]
-    
-    matriz_visual_minas = crear_matriz(filas, columnas, bloque_visual_ocupado)
-    matriz_real_minas = crear_matriz(filas, columnas, caracter_real_bloque)
-    matriz_real_minas = reemplazar_elementos_aleatorio_matriz(matriz_real_minas, caracter_real_bloque, 
-                                                              caracter_real_mina, cantidad_minas)
-    juego_activo = True
-    mina_activada = False
-
-    while juego_activo:
-        tablero_disponible = contador_elemento_matriz(matriz_real_minas, caracter_real_bloque)
-
-        if tablero_disponible:
-            dibujar_matriz(matriz_visual_minas, numeracion=True)
-            ingreso_fila, ingreso_columna = ingreso_validacion_datos_buscaminas(filas, columnas) 
-            ingreso_matriz = matriz_real_minas[ingreso_fila][ingreso_columna]
-
-            if ingreso_matriz == caracter_real_mina:
-                reemplazar_elemento_entre_matrices(matriz_real_minas, matriz_visual_minas,
-                                                   caracter_real_mina, bloque_visual_mina)
-                juego_activo = False
-                mina_activada = True
+        if respuesta is not None or tiempo_restante <= 0:
+            if respuesta is None:
+                estado_jugador["fallos"] += 1
+                return False
+            elif comparar_respuestas(respuesta, dato["respuesta"]):
+                estado_jugador["aciertos"] += 1
+                estado_jugador["puntos"] += 100
+                return True
             else:
-                descubrir_bloques(ingreso_fila, ingreso_columna, matriz_visual_minas,
-                                  matriz_real_minas, datos_tablero) 
-            
-            pausar_y_limpiar()
+                estado_jugador["fallos"] += 1
+                estado_jugador["preguntas_falladas"].append(dato["pregunta"])
+                return False
 
-        else:
-            juego_activo = False    
+        pantalla.fill((10, 10, 40))
+        pantalla.blit(fondo, (0,0))
 
-    if mina_activada:
-        mensaje_resultado = f"Perdiste! Mina pisada en {ingreso_fila+1, ingreso_columna+1}"
-        salida_juego = False
-    else:
-        mensaje_resultado ="Ganaste! liberaste el tablero sin tocar minas"
-        salida_juego = True
+        mostrar_tiempo(pantalla, fuente, tiempo_restante)
+        mostrar_pregunta(pantalla, fuente, dato["pregunta"])
+        mostrar_estado_jugador(pantalla, estado_jugador, fuente)
+        
+        dibujar_lista_botones(botones)
 
-    dibujar_matriz(matriz_visual_minas, True)
-    print(mensaje_resultado)
+        pygame.display.flip()
+        reloj.tick(60)
 
-    pausar_y_limpiar()
-    return salida_juego
+    
+import sys, time, pygame
+import sys, time, pygame
+
+def jugar_completar_palabra(pantalla, recursos_mini_juego: dict) -> bool:
+    # --- Config básica --------------------------------------------------------
+    fuente        = pygame.font.SysFont("Segoe UI Emoji", 20)
+    fuente_input  = pygame.font.SysFont("Consolas", 28, bold=True)
+    reloj         = pygame.time.Clock()
+
+    ancho, alto   = pantalla.get_size()
+    centro_x      = ancho // 2
+    centro_y      = alto // 2
+
+    fondo = pygame.image.load("recursos\\fondo.jpg")
+    fondo = pygame.transform.scale(fondo, (ancho, alto))
+
+    preguntas      = recursos_mini_juego["preguntas"]
+    estado_jugador = recursos_mini_juego["jugador"]
+    config         = recursos_mini_juego["configuracion"]
+    juego          = recursos_mini_juego["juego"]
+
+    if lista_vacia(preguntas):
+        print("No hay más preguntas disponibles.")
+        return False
+
+    tiempo_limite = obtener_tiempo_limite(config, juego)
+
+    # --- Preparar datos de la ronda ------------------------------------------
+    dato             = elegir_elemento_aleatorio_y_remover(preguntas)
+    texto_pregunta   = dato["palabra"]       # ej.: "PYTH_N"
+    texto_respuesta  = dato["respuesta"].strip()
+
+    # --- Variables de entrada -------------------------------------------------
+    entrada_actual   = ""
+    respuesta_final  = None
+    inicio_ronda     = time.time()
+    MAX_CHARS        = 32
+
+    # --- Bucle principal ------------------------------------------------------
+    while True:
+        tiempo_restante = max(0, int(tiempo_limite - (time.time() - inicio_ronda)))
+
+        # -- Eventos ----------------------------------------------------------
+        for evento in pygame.event.get():
+            if evento.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+
+            elif evento.type == pygame.KEYDOWN:
+                if evento.key == pygame.K_RETURN:
+                    respuesta_final = entrada_actual.strip()
+
+                elif evento.key == pygame.K_BACKSPACE:
+                    entrada_actual = entrada_actual[:-1]
+
+                elif evento.unicode.isprintable() and len(entrada_actual) < MAX_CHARS:
+                    entrada_actual += evento.unicode
+
+        # -- Fin de ronda -----------------------------------------------------
+        if respuesta_final is not None or tiempo_restante <= 0:
+            if respuesta_final is None:  # sin tiempo
+                estado_jugador["fallos"] += 1
+                estado_jugador["preguntas_falladas"].append(texto_pregunta)
+                return False
+
+            elif comparar_respuestas(respuesta_final, texto_respuesta):
+                estado_jugador["aciertos"] += 1
+                estado_jugador["puntos"]   += 150
+                return True
+            else:
+                estado_jugador["fallos"] += 1
+                estado_jugador["preguntas_falladas"].append(texto_pregunta)
+                return False
+
+        # --- Dibujo ----------------------------------------------------------
+        pantalla.blit(fondo, (0, 0))
+        mostrar_tiempo(pantalla, fuente, tiempo_restante)
+        mostrar_pregunta(pantalla, fuente, texto_pregunta)
+        mostrar_estado_jugador(pantalla, estado_jugador, fuente)
+
+        # Caja de texto
+        box_w, box_h  = 500, 50
+        caja_rect     = pygame.Rect(centro_x - box_w // 2, centro_y + 100, box_w, box_h)
+        pygame.draw.rect(pantalla, (255, 255, 255), caja_rect, 2, border_radius=8)
+
+        texto_render  = fuente_input.render(entrada_actual.upper(), True, (255, 255, 255))
+        pantalla.blit(
+            texto_render,
+            (caja_rect.x + 10, caja_rect.y + (box_h - texto_render.get_height()) // 2)
+        )
+
+        pygame.display.flip()
+        reloj.tick(60)

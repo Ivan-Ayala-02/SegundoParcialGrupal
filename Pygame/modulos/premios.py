@@ -1,8 +1,21 @@
 import random
-from modulos.entrada import pedir_entrada, es_blanco_o_negro
+import pygame
+import sys
+from modulos.boton import *
 
-###################################################################### PREMIOS ######################################################################
-def obtener_premios(premios_disponibles_copia: dict):
+
+
+def obtener_premios(premios_disponibles_copia: dict) -> list | None:
+    """Selecciona dos premios al azar de niveles distintos que aún tengan premios disponibles.
+
+    Los premios se eliminan del conjunto disponible para evitar repetirlos más adelante.
+
+    Args:
+        premios_disponibles_copia (dict): Diccionario con niveles como claves y listas de premios como valores.
+
+    Returns:
+        list | None: Lista con dos premios distintos o None si no hay suficientes niveles con premios.
+    """
     niveles = list(premios_disponibles_copia.keys())
 
     # Filtrar niveles con premios disponibles
@@ -38,48 +51,60 @@ def obtener_premios(premios_disponibles_copia: dict):
 
     return premios
 
-def elegir_premio(premios_disponibles: list):
-    if premios_disponibles == None or len(premios_disponibles) != 2:
-        print("Error: no hay suficientes premios disponibles.")
-        return None
-    
-    random.shuffle(premios_disponibles)
+def elegir_premio(pantalla, premios: list):
+    fuente = pygame.font.SysFont("Arial", 24)
+    clock = pygame.time.Clock()
+    ancho, alto = pantalla.get_size()  # 🔥 Obtenés dimensiones actuales
+    fondo = pygame.image.load("recursos\\fondo.jpg")
+    fondo = pygame.transform.scale(fondo, (ancho, alto))  # Redimensiona si es necesario
 
-    eleccion = pedir_entrada("Elegí un color ⚪ ⚫​ (blanco/negro): ", es_blanco_o_negro)
+    blanco_btn = crear_boton((180, 60), (ancho//4, 360), pantalla, "white", fuente=("Arial", 30), texto="BLANCO")
+    negro_btn = crear_boton((180, 60), ((ancho//4 + 200), 360), pantalla, "white", fuente=("Arial", 30), texto="NEGRO")
 
-    if eleccion == "blanco":
-        premio_elegido = premios_disponibles[0]
-        premio_no_elegido = premios_disponibles[1]
+    random.shuffle(premios)
+    premio_blanco = premios[0]
+    premio_negro = premios[1]
+
+    seleccion = None
+
+    while seleccion is None:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                if blanco_btn["rectangulo"].collidepoint(event.pos):
+                    seleccion = "blanco"
+                elif negro_btn["rectangulo"].collidepoint(event.pos):
+                    seleccion = "negro"
+
+        pantalla.fill((10, 10, 40))
+        texto = fuente.render("Elegí tu premio", True, (255, 255, 255))
+        rect = texto.get_rect(center=(ancho//2, alto//2))
+
+        pantalla.blit(fondo, (0,0))
+        pantalla.blit(texto, rect)
+
+        dibujar_boton(blanco_btn)
+        dibujar_boton(negro_btn)
+
+        pygame.display.flip()
+        clock.tick(60)
+
+    if seleccion == "blanco":
+        return premio_blanco, premio_negro, "blanco"
     else:
-        premio_elegido = premios_disponibles[1]
-        premio_no_elegido = premios_disponibles[0]
+        return premio_negro, premio_blanco, "negro"
 
-    return premio_elegido, premio_no_elegido, eleccion
+
+
 
 def actualizar_estado_por_premio(premio, premio_dejado, vida, puntos, eleccion):
     if premio["tipo"] == "puntos":
         puntos += premio["valor"]
-        linea_1 = f"Obtuviste {premio['valor']} puntos."
     elif premio["tipo"] == "vida":
         vida += premio["valor"]
-        linea_1 = f"¡Ganaste una vida extra! Tienes {vida} vidas."
     elif premio["tipo"] == "pierde_todo":
         puntos = 0
-        linea_1 = "¡Perdiste todos tus puntos!"
-
-    if premio_dejado["tipo"] == "puntos":
-        print()
-        linea_2 = f"Premio no elegido: {premio_dejado['valor']} puntos."
-    elif premio_dejado["tipo"] == "vida":
-        print()
-        linea_2 = f"Premio no elegido: {premio_dejado['valor']} vida."
-    elif premio_dejado["tipo"] == "pierde_todo":
-        print()
-        linea_2 = f"Premio no elegido: {premio_dejado['tipo']}"
-
-    if eleccion == "blanco":     
-        print(f'⚪  {linea_1} | ⚫  ​{linea_2}')
-    else:
-        print(f'⚫  {linea_1} | ⚪  ​{linea_2}')
 
     return vida, puntos

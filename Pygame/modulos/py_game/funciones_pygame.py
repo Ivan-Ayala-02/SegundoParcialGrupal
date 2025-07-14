@@ -88,10 +88,14 @@ def dibujar_input(input_box):
     pygame.draw.rect(input_box["ventana"], input_box["color_actual"], input_box["rectangulo"], 1)
 
 
-def escribir(input_box, evento):
+def escribir(input_box, evento, caracteres_maximos=None):
     if evento.key == pygame.K_ESCAPE:
         input_box["texto"] = ""
     elif evento.key == pygame.K_BACKSPACE:
         input_box["texto"] = input_box["texto"][:-1]
     else:
-        input_box["texto"] += evento.unicode
+        if caracteres_maximos != None:
+            if len(input_box["texto"]) < caracteres_maximos:
+                input_box["texto"] += evento.unicode
+        else:
+            input_box["texto"] += evento.unicode

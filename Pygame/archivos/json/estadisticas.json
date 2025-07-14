@@ -31,6 +31,20 @@
                 "tiempo_promedio": 5.34,
                 "preguntas_falladas": [],
                 "resultado": "victoria"
+            },
+            {
+                "fecha": "2025-07-14 15:47:39",
+                "aciertos": 1,
+                "fallos": 4,
+                "puntos": 0,
+                "tiempo_promedio": 0.0,
+                "preguntas_falladas": [
+                    "¿Los dinosaurios existieron?",
+                    "¿La Mona Lisa es una pintura famosa?",
+                    "¿Hay 7 continentes?",
+                    "¿El río de la Plata separa Argentina de Uruguay?"
+                ],
+                "resultado": "derrota"
             }
         ]
     },
@@ -107,44 +121,16 @@
             }
         ]
     },
-    "jua": {
+    "gonza": {
         "partidas": [
             {
-                "fecha": "2025-07-11 14:13:52",
-                "aciertos": 0,
-                "fallos": 1,
-                "puntos": 0,
+                "fecha": "2025-07-14 15:17:34",
+                "aciertos": 2,
+                "fallos": 0,
+                "puntos": 100200,
                 "tiempo_promedio": 0.0,
-                "preguntas_falladas": [
-                    "Tiger Woods es famoso por jugar al _____."
-                ],
-                "resultado": "derrota"
-            },
-            {
-                "fecha": "2025-07-11 14:16:13",
-                "aciertos": 6,
-                "fallos": 3,
-                "puntos": 0,
-                "tiempo_promedio": 5.15,
-                "preguntas_falladas": [
-                    "R _ D _ _ C T _ V _ D _ D",
-                    "¿Cuál es el deporte nacional de Argentina?",
-                    "¿Cuál es el metal más abundante en la Tierra?"
-                ],
-                "resultado": "derrota"
-            },
-            {
-                "fecha": "2025-07-11 15:12:38",
-                "aciertos": 3,
-                "fallos": 3,
-                "puntos": 0,
-                "tiempo_promedio": 4.81,
-                "preguntas_falladas": [
-                    "¿A qué temperatura hierve el agua?",
-                    "¿Quién fue Napoleón Bonaparte?",
-                    "¿Qué equipo argentino se llama 'Los Millonarios'?"
-                ],
-                "resultado": "derrota"
+                "preguntas_falladas": [],
+                "resultado": "victoria"
             }
         ]
     }

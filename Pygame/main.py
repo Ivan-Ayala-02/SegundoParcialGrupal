@@ -8,4 +8,3 @@ from archivos.archivo_json import cargar_datos_json
 estadisticas = cargar_datos_json("archivos/json/estadisticas.json")
 
 menu_principal(estadisticas)
-

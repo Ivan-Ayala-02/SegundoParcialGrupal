@@ -1,30 +1,3 @@
-from modulos.jugador import registrar_nuevo_usuario, seleccionar_perfil 
-from modulos.menus.mostrar_menu import mostrar_menu_jugar
-from modulos.utilidades import pausar_y_limpiar
-from modulos.juego import iniciar_juego
-
-def menu_jugar(estadisticas: dict):
-    salir = False
-    
-    while not salir:
-        opcion = mostrar_menu_jugar()
-
-        match opcion:
-            case "1":
-                pausar_y_limpiar()
-                perfil = registrar_nuevo_usuario(estadisticas)
-                if not perfil == None:
-                    iniciar_juego(perfil)
-            case "2":
-                pausar_y_limpiar()
-                perfil = seleccionar_perfil(estadisticas)
-                if not perfil == None:
-                    iniciar_juego(perfil)
-            case "3":
-                salir = True
-            case _:
-                print("❌ Opción inválida.")
-
 ###################################################################################################
 
 import pygame
@@ -32,6 +5,8 @@ from modulos.py_game.funciones_pygame import *
 from modulos.configuracion import *
 from modulos.menus.mostrar_menu import *
 from modulos.py_game.botones import *
+from modulos.juego import iniciar_juego
+
 
 def menu_juego(estadisticas_usuario):
     pygame.init()
@@ -72,19 +47,24 @@ def menu_juego(estadisticas_usuario):
         for boton in lista_opciones:
 
             if boton["texto"] == "Registrar nuevo usuario":
-                if boton["presionado"] == True:
+                if boton["presionado"]:
                     usuario = crear_perfil_usuario(estadisticas_usuario)
-                    boton["presionado"] = False 
+                    boton["presionado"] = False
+                    if usuario:                               # << NUEVO
+                        iniciar_juego(LONGITUD_PANTALLA, usuario)
 
             elif boton["texto"] == "Seleccionar perfil":
-                if boton["presionado"] == True:
+                if boton["presionado"]:
                     usuario = seleccionar_perfil_usuario(estadisticas_usuario)
-                    boton["presionado"] = False 
-
+                    boton["presionado"] = False
+                    if usuario:                               # << NUEVO
+                        iniciar_juego(LONGITUD_PANTALLA, usuario)
+                    
             elif boton["texto"] == "Volver al menu":
-                if boton["presionado"] == True:
-                    bucle_menu = False
-                    boton["presionado"] = False   
+                    if boton["presionado"]:
+                        bucle_menu = False
+                        boton["presionado"] = False
+
 
         pygame.display.update()
 
@@ -139,8 +119,7 @@ def crear_perfil_usuario(estadisticas:dict):
                         bucle_menu = False
                         return nombre_usuario
 
-                escribir(input_usuario, event)
-
+                escribir(input_usuario, event, 15) # agregar el 15 para que tome el limite de caracter
 
         mostrar_imagen(fondo, LONGITUD_PANTALLA, (0,0))  
         LONGITUD_PANTALLA.blit(mensaje_seleccion, pos_mensaje)
@@ -166,8 +145,12 @@ def seleccionar_perfil_usuario(estadisticas:dict):
     pos_mensaje = (280,50)
     mensaje_seleccion = fuente_mensaje.render("Seleccione usuario", True, color_blanco)
     mensaje_error = fuente_mensaje.render("No existen usuarios", True, color_blanco)
-
     volver_atras = crear_boton((50,100), (300,550), LONGITUD_PANTALLA, None, None, fuente_texto, "Volver atras")
+
+    lista_usuarios = []
+    for clave in estadisticas:
+        lista_usuarios.append(clave)
+        lista_botones = crear_botones_opciones(lista_usuarios, LONGITUD_PANTALLA, (50,40), fuente_texto, (320,100), 10)
 
     bucle_menu = True
 
@@ -179,8 +162,14 @@ def seleccionar_perfil_usuario(estadisticas:dict):
                     pygame.quit()
 
             elif event.type == pygame.MOUSEBUTTONDOWN:
+
                 if volver_atras["rectangulo"].collidepoint(event.pos):
                         volver_atras["presionado"] = True
+
+                for boton in lista_botones:
+                    if boton["rectangulo"].collidepoint(event.pos):
+                        boton["presionado"] = True
+                    
 
         if len(estadisticas) == 0:
             mostrar_imagen(fondo, LONGITUD_PANTALLA, (0,0))  
@@ -190,14 +179,14 @@ def seleccionar_perfil_usuario(estadisticas:dict):
             mostrar_imagen(fondo, LONGITUD_PANTALLA, (0,0))
             LONGITUD_PANTALLA.blit(mensaje_seleccion, pos_mensaje)
 
-            lista_usuarios = []
-            for clave in estadisticas:
-                lista_usuarios.append(clave)
-                lista_botones = crear_botones_opciones(lista_usuarios, LONGITUD_PANTALLA, (50,40), fuente_texto, (320,100), 10)
 
-            dibujar_lista_botones(lista_botones)
-
+        dibujar_lista_botones(lista_botones)
         dibujar_boton(volver_atras)
+
+        for boton in lista_botones:
+            if boton["presionado"]:
+                return boton["texto"]
+
         if volver_atras["presionado"]:
             volver_atras["presionado"] = False
             bucle_menu = False

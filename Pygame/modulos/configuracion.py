@@ -15,25 +15,23 @@ dificultades = configuracion_juego["dificultades"]
 
 funciones_juegos = {
     "si_o_no": jugar_si_o_no,
-    "completar_oracion": jugar_completar_oracion,
-    "completar_palabra": jugar_completar_palabra,
-    "preguntados": jugar_preguntados
+    "completar_palabra": jugar_completar_palabra
 }
 
-funciones_extras = {
-    "buscaminas" : minijuego_buscaminas
-}
 
 preguntas = {
     "si_o_no": cargar_datos_csv("archivos\csv\si_o_no.csv"),
-    "completar_oracion": cargar_datos_csv("archivos\csv\completar_oracion.csv"),
-    "completar_palabra": cargar_datos_csv("archivos\csv\completar_palabra.csv"),
-    "preguntados": cargar_datos_csv("archivos\csv\preguntados.csv")
+    "completar_palabra": cargar_datos_csv("archivos\csv\completar_palabra.csv")
 }
 
 premios = cargar_datos_json("archivos\json\premios.json")
 
 premios_disponibles = deepcopy(premios)
+
+# NUEVO IMPORTANTE AGREGAR
+extras = {
+    "Buscaminas" : ""
+}
 
 estadisticas_jugadores = []
 
