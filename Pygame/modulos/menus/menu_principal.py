@@ -47,7 +47,7 @@ from archivos.archivo_txt import cargar_texto_desde_archivo
 from modulos.configuracion import *
 from modulos.py_game.botones import *
 
-def menu_principal():
+def menu_principal(estadisticas_usuario):
     pygame.init()
     pygame.mixer.init()
 
@@ -112,7 +112,7 @@ def menu_principal():
             if boton["texto"] == "Jugar":
                 if boton["presionado"] == True:
                     boton["presionado"] = False
-                    menu_juego()
+                    menu_juego(estadisticas_usuario)
             
             elif boton["texto"] == "Reglas":
                 if boton["presionado"] == True:

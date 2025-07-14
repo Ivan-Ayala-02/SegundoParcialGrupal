@@ -3,6 +3,9 @@
 
 # Segundo Parcial: Juego de Preguntas y Respuestas Multietapas
 from modulos.menus.menu_principal import menu_principal
+from archivos.archivo_json import cargar_datos_json
 
-menu_principal()
+estadisticas = cargar_datos_json("archivos/json/estadisticas.json")
+
+menu_principal(estadisticas)
 

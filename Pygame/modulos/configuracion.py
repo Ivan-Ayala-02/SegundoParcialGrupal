@@ -6,6 +6,7 @@ from archivos.archivo_csv import cargar_datos_csv
 
 configuracion_juego = cargar_datos_json("archivos\json\configuracion.json")
 
+
 rondas = configuracion_juego["rondas"]
 estado_inicial = configuracion_juego["estado_inicial"]
 tiempos = configuracion_juego["tiempos_limite"]
