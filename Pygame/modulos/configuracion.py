@@ -17,7 +17,11 @@ funciones_juegos = {
     "completar_oracion": jugar_completar_oracion,
     "completar_palabra": jugar_completar_palabra,
     "preguntados": jugar_preguntados
-}    
+}
+
+funciones_extras = {
+    "buscaminas" : minijuego_buscaminas
+}
 
 preguntas = {
     "si_o_no": cargar_datos_csv("archivos\csv\si_o_no.csv"),
@@ -46,32 +50,4 @@ diccionario_datos_tablero = {
 ANCHO_PANTALLA = configuracion_juego["ancho_pantalla"]
 ALTO_PANTALLA = configuracion_juego["alto_pantalla"]
 LONGITUD_PANTALLA = crear_ventana(ANCHO_PANTALLA, ALTO_PANTALLA)
-
-def crear_ventana(ancho:int, alto:int) -> tuple:
-    VENTANA = pygame.display.set_mode((ancho,alto))
-    return VENTANA
-
-generar_nombre_e_icono_ventana("¡AHORA CAIGO!", "recursos/zapatillas.png")
 fuente_texto = ("Arial", 30)
-
-def cargar_imagenes_intro():
-    fondo = cargar_imagen("recursos/fondo.jpg")
-    logo_juego = cargar_imagen("recursos/icono_menu.png")
-    barassi = cargar_imagen("recursos/barassi_menu.png")
-    return fondo, logo_juego, barassi
-
-def mostrar_imagenes_intro(fondo, pantalla, logo, coord_logo, barassi, coord_barassi):
-    mostrar_imagen(fondo, pantalla, (0,0))
-    mostrar_imagen(logo, pantalla, coord_logo)
-    mostrar_imagen(barassi, pantalla, coord_barassi)
-
-def animar_imagen(PANTALLA, fondo, logo_juego, coordenadas_logo, coordenadas_destino, velocidad):
-
-    animacion_finalizada = mover_imagen(coordenadas_logo, coordenadas_destino, velocidad)
-    mostrar_imagen(fondo, PANTALLA, (0,0))
-    mostrar_imagen(logo_juego, PANTALLA, coordenadas_logo)
-
-    if animacion_finalizada:
-        return True
-    else:
-        return False

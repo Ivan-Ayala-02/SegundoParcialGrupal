@@ -4,13 +4,5 @@
 # Segundo Parcial: Juego de Preguntas y Respuestas Multietapas
 from modulos.menus.menu_principal import menu_principal
 
-import pygame
-
-#pygame.init()
-
-
-    
-#main()
-
 menu_principal()
 

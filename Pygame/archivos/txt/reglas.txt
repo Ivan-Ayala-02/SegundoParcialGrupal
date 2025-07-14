@@ -3,8 +3,8 @@
 ╚══════════════════════════════╝
 
 📌 Objetivo:
-Superar 12 rondas consecutivas respondiendo preguntas de distintos tipos y dificultades,
-evitando quedarte sin vidas.
+Superar 12 rondas consecutivas respondiendo preguntas de distintos tipos y 
+dificultades, evitando quedarte sin vidas.
 
 🎮 Dinámica del juego:
 - El jugador compite solo.

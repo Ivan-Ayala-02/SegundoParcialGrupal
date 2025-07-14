@@ -56,24 +56,3 @@ def mostrar_reglas(texto: str):
 
 #---------------------------------------------------------------------------------------------------
 
-def cargar_imagenes_intro():
-    fondo = cargar_imagen("recursos/fondo.jpg")
-    logo_juego = cargar_imagen("recursos/icono_menu.png")
-    barassi = cargar_imagen("recursos/barassi_menu.png")
-    return fondo, logo_juego, barassi
-
-def mostrar_imagenes_intro(fondo, pantalla, logo, coord_logo, barassi, coord_barassi):
-    mostrar_imagen(fondo, pantalla, (0,0))
-    mostrar_imagen(logo, pantalla, coord_logo)
-    mostrar_imagen(barassi, pantalla, coord_barassi)
-
-def animar_imagen(PANTALLA, fondo, logo_juego, coordenadas_logo, coordenadas_destino, velocidad):
-
-    animacion_finalizada = mover_imagen(coordenadas_logo, coordenadas_destino, velocidad)
-    mostrar_imagen(fondo, PANTALLA, (0,0))
-    mostrar_imagen(logo_juego, PANTALLA, coordenadas_logo)
-
-    if animacion_finalizada:
-        return True
-    else:
-        return False

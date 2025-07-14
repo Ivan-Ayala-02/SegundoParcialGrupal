@@ -69,7 +69,18 @@ def menu_juego():
             dibujar_lista_botones(lista_opciones)
 
         for boton in lista_opciones:
-            if boton["texto"] == "Volver al menu":
+
+            if boton["texto"] == "Registrar nuevo usuario":
+                if boton["presionado"] == True:
+                    pass
+                    boton["presionado"] = False 
+
+            elif boton["texto"] == "Seleccionar perfil":
+                if boton["presionado"] == True:
+                    pass
+                    boton["presionado"] = False 
+
+            elif boton["texto"] == "Volver al menu":
                 if boton["presionado"] == True:
                     bucle_menu = False
                     boton["presionado"] = False   
@@ -77,5 +88,5 @@ def menu_juego():
         pygame.display.update()
 
     
-    
+
     

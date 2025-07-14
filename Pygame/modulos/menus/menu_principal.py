@@ -6,15 +6,10 @@ from modulos.menus.mostrar_menu import mostrar_menu_principal
 from modulos.menus.menu_jugar import menu_jugar, menu_juego
 from modulos.menus.menu_estadisticas import menu_estadisticas
 from modulos.menus.menu_extras import menu_extras
+from modulos.menus.menu_reglas import menu_reglas
 
 from archivos.archivo_json import cargar_datos_json 
 from archivos.archivo_txt import cargar_texto_desde_archivo
-
-
-from modulos.configuracion import *
-from modulos.menus.mostrar_menu import *
-from modulos.py_game.botones import *
-
 
 '''def main():
     en_ejecucion = True
@@ -47,8 +42,10 @@ from modulos.py_game.botones import *
                 print("\n❌ Opción inválida ❌")
                 pausar_y_limpiar()'''
 
+#------------------------------------------------------------------------------
 
-
+from modulos.configuracion import *
+from modulos.py_game.botones import *
 
 def menu_principal():
     pygame.init()
@@ -59,6 +56,7 @@ def menu_principal():
 
     fondo, logo_juego, barassi = cargar_imagenes_intro()
     mostrar_imagenes_intro(fondo, LONGITUD_PANTALLA, logo_juego, coordenadas_logo, barassi, coordenadas_barassi)
+    generar_nombre_e_icono_ventana("¡AHORA CAIGO!", "recursos/zapatillas.png")
 
     cargar_audio("recursos/musica_menu.wav")
     ajustar_volumen(0.3)
@@ -105,15 +103,33 @@ def menu_principal():
             ingreso_menu_principal = True
 
         if ingreso_menu_principal:
+            mostrar_imagen(fondo, LONGITUD_PANTALLA, (0,0))
+            mostrar_imagen(logo_juego, LONGITUD_PANTALLA, (140,30))
             dibujar_lista_botones(lista_botones)
 
         for boton in lista_botones:
+            
             if boton["texto"] == "Jugar":
                 if boton["presionado"] == True:
+                    boton["presionado"] = False
                     menu_juego()
-
-            if boton["texto"] == "Salir":
+            
+            elif boton["texto"] == "Reglas":
                 if boton["presionado"] == True:
+                    boton["presionado"] = False
+                    menu_reglas()
+            
+            elif boton["texto"] == "Estadisticas":
+                if boton["presionado"] == True:
+                    boton["presionado"] = False
+
+            elif boton["texto"] == "Extras":
+                if boton["presionado"] == True:
+                    boton["presionado"] = False
+
+            elif boton["texto"] == "Salir":
+                if boton["presionado"] == True:
+                    boton["presionado"] = False
                     bucle_intro = False
             
         pygame.display.update()
